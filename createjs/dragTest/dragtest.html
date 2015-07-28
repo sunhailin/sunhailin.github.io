@@ -9,6 +9,7 @@
     <canvas id="dragCanvas" width="600" height="400"></canvas>
     <script>
         var stage=new createjs.Stage("dragCanvas");
+        createjs.Touch.enable(stage);
         createjs.Ticker.setFPS(30);
         createjs.Ticker.addEventListener("tick",stage);
 
