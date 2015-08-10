@@ -16,10 +16,14 @@ window.onload=function()
     var i;
     for(i=0;i<40;i++)
     {
+        var rx=canvas.width*Math.random();
+        var ry=canvas.height*Math.random();
+        var rd=30+30*Math.random();
         var circle=new createjs.Shape();
         circle.graphics.beginFill("rgba("+Math.round(255*Math.random())+","+Math.round(255*Math.random())+","+Math.round(255*Math.random())+","+0.5*Math.random()+")");
-        circle.graphics.drawCircle(canvas.width*Math.random(),canvas.height*Math.random(),30+30*Math.random());
+        circle.graphics.drawCircle(rx,ry,rd);
         circle.graphics.endFill();
+        circle.cache(-rd+rx,-rd+ry,2*rd,2*rd);
         bg.addChild(circle);
     }
 

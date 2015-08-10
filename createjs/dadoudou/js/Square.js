@@ -68,6 +68,7 @@
         this.bg.graphics.beginFill(color);
         this.bg.graphics.drawRect(0,0,25,25);
         this.bg.graphics.endFill();
+        this.bg.cache(0,0,25,25);
     };
 
     p.setHasBall=function(p)

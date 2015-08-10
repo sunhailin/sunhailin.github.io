@@ -35,10 +35,10 @@
     {
         this.on("mousedown",function(e) {
             this.drawBG(this.downColor);
-        });
+        },this);
         this.on("pressup",function(e){
             this.drawBG(this.upColor);
-        });
+        },this);
     };
 
     p.drawBG=function(bgColor)
@@ -47,6 +47,7 @@
         this.bg.graphics.beginFill(bgColor);
         this.bg.graphics.drawRoundRect(0,0,this.bwidth,this.bheight,4,4);
         this.bg.graphics.endFill();
+        this.bg.cache(0,0,this.bwidth,this.bheight);
     };
 
     window.SHLTextButton=createjs.promote(SHLTextButton,"Container");
