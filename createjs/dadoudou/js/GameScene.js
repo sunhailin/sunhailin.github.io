@@ -64,7 +64,7 @@
             }
         }
         this.squares.sort(function(a,b){
-            return Math.random()>0.5?1:-1;
+            return Math.round(Math.random())==1?1:-1;
         });
 
         for(i=0;i<10;i++)
