@@ -8,7 +8,7 @@
         this.tickListener;
         this.speedX;
         this.speedY;
-        this.speedA=5;
+        this.speedA=4;
         this.gd=new GlobalData();
 
         var ball=new createjs.Bitmap(this.gd.resource.getResult("image"+color));

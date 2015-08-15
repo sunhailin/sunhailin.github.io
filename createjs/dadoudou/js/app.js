@@ -2,9 +2,16 @@ window.onload=function()
 {
     var canvas=document.getElementById("myCanvas");
     var stage=new createjs.Stage("myCanvas");
-    createjs.Touch.enable(stage);
+    if(createjs.Touch.isSupported())
+    {
+        createjs.Touch.enable(stage);
+    }
     createjs.Ticker.setFPS(30);
-    createjs.Ticker.addEventListener("tick",stage);
+    //createjs.Ticker.addEventListener("tick",stage);
+    createjs.Ticker.addEventListener("tick",function(e)
+    {
+        stage.update();
+    });
 
     var gd=new GlobalData();
     gd.stage=stage;

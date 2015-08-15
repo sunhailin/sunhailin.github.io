@@ -2,7 +2,7 @@
     function GameScene()
     {
         this.Container_constructor();
-        this.squares=[];
+        this.squareNumArray;
         this.squaresInPosition=[];
         this.tickCount=0;
         this.tickListener;
@@ -13,6 +13,12 @@
         this.bg.x=25;
         this.bg.y=60;
         this.addChild(this.bg);
+        this.bgSquares=new createjs.Shape();
+        this.bg.addChild(this.bgSquares);
+        this.bgDownShape=new createjs.Shape();
+        this.bg.addChild(this.bgDownShape);
+        this.bg.on("mousedown",this.onBgMouseDown,this);
+        this.bg.on("pressup",this.onBgMouseUp,this);
         this.ballContainer=new createjs.Container();
         this.ballContainer.x=25;
         this.ballContainer.y=60;
@@ -48,24 +54,56 @@
 
     p.init=function()
     {
+        this.squareNumArray=new Array(GameScene.HENG*GameScene.SHU);
         var i,j;
         for(i=0;i<GameScene.HENG;i++)
         {
-            this.squaresInPosition[i]=[];
+            this.squaresInPosition[i]=new Array();
             for(j=0;j<GameScene.SHU;j++)
             {
-                var square=new Square(i,j);
-                square.x=i*25;
-                square.y=j*25;
-                square.on("click",this.onSquareClick,this);
-                this.bg.addChild(square);
-                this.squares.push(square);
-                this.squaresInPosition[i][j]=square;
+                this.squareNumArray[i*GameScene.SHU+j]=i*GameScene.SHU+j;
+                var n=i+j;
+                var color;
+                if(n%2==0)
+                {
+                    color="#ffffff";
+                }
+                else
+                {
+                    if(i%2)
+                    {
+                        color="#daf5d7";
+                    }
+                    else
+                    {
+                        color="#fde4eb";
+                    }
+                }
+                this.bgSquares.graphics.beginFill(color).drawRect(i*25,j*25,25,25).endFill();
+                this.squaresInPosition[i][j]=undefined;
             }
         }
-        this.squares.sort(function(a,b){
-            return Math.random()>0.5?1:-1;
-        });
+        this.bgSquares.cache(0,0,750,375);
+
+        this.bgDownShape.graphics.beginFill("#666").drawRect(0,0,25,25).endFill();
+        this.bgDownShape.cache(0,0,25,25);
+        //先放在屏幕外，要显示时放到显示的位置
+        this.bgDownShape.x=-100;
+        this.bgDownShape.y=-100;
+
+        randomSort(this.squareNumArray);
+        function randomSort(arr)
+        {
+            var k;
+            for(k=0;k<arr.length;k++)
+            {
+                var temp;
+                var randomIndex=Math.floor(Math.random()*arr.length);
+                temp=arr[k];
+                arr[k]=arr[randomIndex];
+                arr[randomIndex]=temp;
+            }
+        }
 
         for(i=0;i<10;i++)
         {
@@ -73,10 +111,12 @@
             for(j=0;j<20;j++)
             {
                 var ball=new Ball(color);
-                var s=this.squares[20*i+j];
-                s.setball(ball);
-                ball.x= s.x;
-                ball.y= s.y;
+                var p=this.squareNumArray[20*i+j];
+                var posX=parseInt(p/GameScene.SHU);
+                var posY=p%GameScene.SHU;
+                ball.x=posX*25;
+                ball.y=posY*25;
+                this.squaresInPosition[posX][posY]=ball;
                 this.ballContainer.addChild(ball);
             }
         }
@@ -106,9 +146,11 @@
         this.timeBar.graphics.endFill();
     };
 
-    p.onSquareClick=function(e)
+    p.onBgMouseDown=function(e)
     {
-        if(e.currentTarget.getHasBall())
+        var posX=parseInt(e.localX/25);
+        var posY=parseInt(e.localY/25);
+        if(this.squaresInPosition[posX][posY])
         {
             return;
         }
@@ -116,20 +158,22 @@
         {
             return;
         }
+        this.bgDownShape.x=posX*25;
+        this.bgDownShape.y=posY*25;
         var isWrong=true;
-        var squareWithBall=this.getTargetBalls(e.currentTarget.heng, e.currentTarget.shu);
+        var squareWithBall=this.getTargetBalls(posX,posY);
         var tempScore=0;
         for(var i=0;i<squareWithBall.length;i++)
         {
-            var s=squareWithBall[i];
+            var b=squareWithBall[i];
             for(var j=0;j<squareWithBall.length;j++)
             {
-                var s1=squareWithBall[j];
-                if(s.ball.color==s1.ball.color&&j!=i)
+                var b1=squareWithBall[j];
+                if(b.color==b1.color&&j!=i)
                 {
-                    this.ballContainer.addChild(s.ball);
-                    s.ball.beginFall();
-                    s.setHasBall(false);
+                    this.ballContainer.addChild(b);
+                    b.beginFall();
+                    this.squaresInPosition[b.x/25][b.y/25]=undefined;
                     isWrong=false;
                     tempScore++;
                     break;
@@ -158,6 +202,12 @@
         }
     };
 
+    p.onBgMouseUp=function(e)
+    {
+        this.bgDownShape.x=-100;
+        this.bgDownShape.y=-100;
+    };
+
     p.getTargetBalls=function(i,j)
     {
         var squareWithBall=[];
@@ -166,7 +216,7 @@
         for(n=j-1;n>=0;n--)
         {
             s=this.squaresInPosition[i][n];
-            if(s.getHasBall())
+            if(s)
             {
                 squareWithBall.push(s);
                 break;
@@ -175,16 +225,16 @@
         for(n=j+1;n<GameScene.SHU;n++)
         {
             s=this.squaresInPosition[i][n];
-            if(s.getHasBall())
+            if(s)
             {
-                squareWithBall.push(s);0
+                squareWithBall.push(s);
                 break;
             }
         }
         for(n=i-1;n>=0;n--)
         {
             s=this.squaresInPosition[n][j];
-            if(s.getHasBall())
+            if(s)
             {
                 squareWithBall.push(s);
                 break;
@@ -193,7 +243,7 @@
         for(n=i+1;n<GameScene.HENG;n++)
         {
             s=this.squaresInPosition[n][j];
-            if(s.getHasBall())
+            if(s)
             {
                 squareWithBall.push(s);
                 break;
@@ -206,7 +256,10 @@
     p.onTick=function(e)
     {
         this.tickCount++;
-        this.updateTickCount();
+        if(this.tickCount%30==0)
+        {
+            this.updateTickCount();
+        }
     };
 
     p.updateTickCount=function()
