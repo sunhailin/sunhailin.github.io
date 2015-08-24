@@ -22,12 +22,13 @@ $(document).ready(function(){
             globalData.pageData=data.pages[0];
             console.log(globalData.pageData);
             //set canvas size
-            canvas.height=globalData.pageData.height;
-            canvas.width=globalData.pageData.width;
+
             globalData.pageWidth=globalData.pageData.width;
             globalData.pageHeight=globalData.pageData.height;
             globalData.ratio=globalData.pageData.width/globalData.pageData.height;
             manageScreenSize();
+            canvas.height=globalData.pageData.height;
+            canvas.width=globalData.pageData.width;
 
             editView=new EditView();
             stage.addChild(editView);
