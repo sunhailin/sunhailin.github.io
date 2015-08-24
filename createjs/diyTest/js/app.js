@@ -64,6 +64,7 @@ $(document).ready(function(){
         var Wwidth=window.innerWidth;
         var Wheight=window.innerHeight;
         console.log(Wwidth,Wheight);
+        alert(Wwidth+"-----"+Wheight);
         if(Wwidth/Wheight>globalData.ratio)
         {
             globalData.scale=Wheight/globalData.pageData.height;
