@@ -7,7 +7,7 @@ $(document).ready(function(){
     var stage=new createjs.Stage(canvas);
     var editView;
 
-    createjs.Ticker.setFPS(30);
+    createjs.Ticker.framerate=30;
     createjs.Ticker.addEventListener("tick",stage);
 
     //set globaldata
@@ -63,6 +63,7 @@ $(document).ready(function(){
         console.log("resize");
         var Wwidth=window.innerWidth;
         var Wheight=window.innerHeight;
+        console.log(Wwidth,Wheight);
         if(Wwidth/Wheight>globalData.ratio)
         {
             globalData.scale=Wheight/globalData.pageData.height;

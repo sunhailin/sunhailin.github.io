@@ -15,18 +15,6 @@
     <div id="canvasContainer">
         <canvas id="editorCanvas"></canvas>
     </div>
-    <div id="footer" class="container">
-        <div class="navbar-fixed-bottom">
-            <div class="text-center">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default" id="editButton">编辑</button>
-                    <button type="button" class="btn btn-default" id="clearButton">清除</button>
-                    <button type="button" class="btn btn-default" id="loadPageButton">加载页</button>
-                    <button type="button" class="btn btn-default" id="outputButton">导出数据</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="remodal-wrapper">
         <div class="remodal" data-remodal-id="modal" data-remodal-options="closeOnOutsideClick: false">
             <h1 class="editTitle">编辑文字</h1>
@@ -44,7 +32,18 @@
             <button data-remodal-action="cancel" class="remodal-cancel">取消</button>
         </div>
     </div>
-
+    <div id="footer" class="container">
+        <div class="navbar-fixed-bottom">
+            <div class="text-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default" id="editButton">编辑</button>
+                    <button type="button" class="btn btn-default" id="clearButton">清除</button>
+                    <button type="button" class="btn btn-default" id="loadPageButton">加载页</button>
+                    <button type="button" class="btn btn-default" id="outputButton">导出数据</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--
     <div class="modal fade" id="textEditorContainer" tabindex="-1" role="dialog" aria-labelledby="textModalLabel" aria-hidden="true" data-backdrop="static">
@@ -65,6 +64,7 @@
     </div>
     -->
 
+    <script src="js/debuggap.js"></script>
     <script src="js/jquery-2.1.4.js"></script>
     <script src="js/remodal.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
