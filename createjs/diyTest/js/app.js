@@ -37,13 +37,13 @@ $(document).ready(function(){
     //根据窗口大小进行缩放
     function manageScreenSize()
     {
+        if(createjs.Touch.isSupported())
+        {
+            createjs.Touch.enable(stage);
+        }
         if(typeof window.orientation!="undefined")
         {
             window.onroientationchange=onOritationChange;
-            if(createjs.Touch.isSupported())
-            {
-                createjs.Touch.enable(stage);
-            }
             onOritationChange();
         }
         else
