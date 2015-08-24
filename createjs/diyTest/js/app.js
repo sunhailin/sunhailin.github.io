@@ -76,9 +76,9 @@ $(document).ready(function(){
             //container.style.top=(Wheight-globalData.pageHeight*globalData.scale)/2+"px";
             //container.style.left="0px";
         }
-        //canvas.setAttribute("style","-webkit-transform:scale("+globalData.scale+")");
+        canvas.setAttribute("style","-webkit-transform:scale("+globalData.scale+")");
         //canvas.setAttribute("style","-moz-transform:scale("+globalData.scale+")");
-        canvas.setAttribute("style","transform:scale("+globalData.scale+")");
+        //canvas.setAttribute("style","transform:scale("+globalData.scale+")");
         //$("#editorCanvas").attr("style","transform:scale("+globalData.scale+")");
         console.log($("#editorCanvas").attr("style"));
         window.scrollTo(0,0);
