@@ -1,0 +1,139 @@
+{
+    "pages": [
+        {
+            "id": "7270fa17",
+            "width": 500,
+            "height": 367,
+            "primitivewidth": 3010,
+            "primitiveheight": 2210,
+            "displaylist": [
+                {
+                    "type": "background",
+                    "parms": {
+                        "id": "7270fa17-0",
+                        "width": 525,
+                        "height": 495,
+                        "imageurl": "bkg/76874cfc.png",
+                        "x": -1,
+                        "y": -65
+                    }
+                },
+                {
+                    "type": "image",
+                    "parms": {
+                        "id": "7270fa17-1",
+                        "width": 172,
+                        "height": 259,
+                        "imageurl": "img/7b122626.png",
+                        "editable": "1",
+                        "x": 319,
+                        "y": 17,
+                        "maskurl": "msk/1c4610a4.png",
+                        "maskx": 338,
+                        "masky": 54,
+                        "maskwidth": 126,
+                        "maskheight": 217,
+                        "selectable": "1",
+                        "moveable": "1"
+                    }
+                },
+                {
+                    "type": "image",
+                    "parms": {
+                        "id": "7270fa17-2",
+                        "width": 190,
+                        "height": 143,
+                        "imageurl": "img/75f8dbb8.png",
+                        "editable": "1",
+                        "x": 49,
+                        "y": 214,
+                        "maskurl": "msk/8b7ca8da.png",
+                        "maskx": 71,
+                        "masky": 208,
+                        "maskwidth": 132,
+                        "maskheight": 134,
+                        "selectable": "1",
+                        "moveable": "1"
+                    }
+                },
+                {
+                    "type": "image",
+                    "parms": {
+                        "id": "7270fa17-3",
+                        "width": 303,
+                        "height": 240,
+                        "imageurl": "img/755223a6.png",
+                        "x": 23,
+                        "y": 20
+                    }
+                },
+                {
+                    "type": "image",
+                    "parms": {
+                        "id": "7270fa17-4",
+                        "width": 337,
+                        "height": 223,
+                        "imageurl": "img/b31dae79.png",
+                        "editable": "1",
+                        "x": 31,
+                        "y": 29,
+                        "maskurl": "msk/213348e3.png",
+                        "maskx": 31,
+                        "masky": 28,
+                        "maskwidth": 284,
+                        "maskheight": 218,
+                        "selectable": "1",
+                        "moveable": "1"
+                    }
+                },
+                {
+                    "type": "decroation",
+                    "parms": {
+                        "id": "7270fa17-5",
+                        "width": 431,
+                        "height": 244,
+                        "imageurl": "dec/11383bab.png",
+                        "x": 24,
+                        "y": 99,
+                        "selectable": "1",
+                        "moveable": "1"
+                    }
+                },
+                {
+                    "type": "text",
+                    "parms": {
+                        "id": "7270fa17-6",
+                        "width": 85,
+                        "height": 27,
+                        "imageurl": "txt/d593345e.png",
+                        "editable": "1",
+                        "x": 227,
+                        "y": 257,
+                        "selectable": "1",
+                        "moveable": "1",
+                        "content": "测测测是是是\rasdf"
+                    }
+                }
+            ],
+            "extrainfo": [
+                {
+                    "type": "datePosition",
+                    "data": [
+                        {
+                            "day": "1/2",
+                            "location": "389,135",
+                            "width": 25,
+                            "height": 23
+                        },
+                        {
+                            "day": "2/3",
+                            "location": "181,118",
+                            "width": 25,
+                            "height": 23
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

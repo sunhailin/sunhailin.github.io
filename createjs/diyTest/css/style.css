@@ -1,0 +1,17 @@
+*{
+    font-family: "Microsoft YaHei";
+}
+body{
+    margin: 0;
+    overflow: hidden;
+}
+#editorCanvas{
+    background-color: #cccccc;
+    position: absolute;
+    -webket-transform-origin:0px 0px;
+    -moz-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+}
+#canvasContainer{
+    position: absolute;
+}
