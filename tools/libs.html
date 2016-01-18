@@ -35,15 +35,26 @@
             width: 100%;
         }
         #nameList{
-
+            padding: 0;
         }
         #nameList li{
+            padding: 10px 20px;
             list-style-type: none;
+            border-radius: 5px;
+            background-color: #fff;
+            transition: background-color 0.3s linear;
+        }
+        #nameList li:hover{
+            background-color: #dedede;
         }
         #nameList a{
-            color: #ccc;
+            color: #33cbfd;
             font-size: 30px;
             font-weight: bold;
+            text-decoration: none;
+        }
+        #nameList a:hover{
+            color: #99befc;
         }
     </style>
 </head>
@@ -54,7 +65,20 @@
     </header>
     <section id="nameContainer">
         <ul id="nameList">
-            <li><a href="http://www.jquery123.com/">jquery</a></li>
+            <a href="http://www.jquery123.com/" target="_blank"><li>jquery</li></a>
+            <a href="http://www.bootcss.com/" target="_blank"><li>bootstrap</li></a>
+            <a href="http://createjs.com/" target="_blank"><li>createjs</li></a>
+            <a href="http://fex.baidu.com/webuploader/" target="_blank"><li>webuploader</li></a>
+            <a href="http://refreshless.com/nouislider/" target="_blank"><li>nouislider</li></a>
+            <a href="https://github.com/jonmiles/bootstrap-treeview" target="_blank"><li>bootstrap-treeview</li></a>
+            <a href="http://momentjs.cn/" target="_blank"><li>momentjs</li></a>
+            <a href="http://masonry.desandro.com/" target="_blank"><li>masonry</li></a>
+            <a href="https://github.com/desandro/imagesloaded" target="_blank"><li>imagesloaded</li></a>
+            <a href="https://github.com/toddmotto/echo" target="_blank"><li>echojs</li></a>
+            <a href="http://www.requirejs.org/" target="_blank"><li>requirejs</li></a>
+            <a href="http://touch.code.baidu.com/" target="_blank"><li>touchjs</li></a>
+            <a href="http://hammerjs.github.io/" target="_blank"><li>hammerjs</li></a>
+            <a href="https://github.com/Mottie/tablesorter" target="_blank"><li>tablesorter</li></a>
         </ul>
     </section>
 </div>
