@@ -1,7 +1,257 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34ba91d6-1b51-441f-a376-188171a313d0" name="Default" comment="" />
+    <list default="true" id="34ba91d6-1b51-441f-a376-188171a313d0" name="Default" comment="">
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\VectorButton.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\daisy.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\flowers.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\ground.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\hill1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\hill2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\logo_createjs.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\robot.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\sky.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\spritesheet_button.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\spritesheet_font.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\spritesheet_grant.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\spritesheet_icons.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\spritesheet_sparkle.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\art\tmw_desert_spacing.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\audio\bionic.mp3" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\css\examples.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\css\shared.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\js\Slider.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\js\examples.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\libs\preloadjs-NEXT.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\libs\soundjs-NEXT.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\_assets\libs\tweenjs-NEXT.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\bkg\37d6e12d.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\bkg\76874cfc.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\css\detail.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\css\remodal-default-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\css\remodal.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\data\page.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\dec\11383bab.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\dec\1b042c0a.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\1b042c0a.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\1b495866.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\1e784b5a.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\1e78bc48.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\270fded6.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\28b39a34.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\2ca0534.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\37d6e12d.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\38e70b6f.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\40462d74.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\43b04789.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\46610926.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\4b1ee900.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\4f769d03.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\55caa141.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\5677e925.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\5ca00bd4.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\5d25048.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\5e1ca7c1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\609a9c81.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\62daba13.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\65173dbe.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\66fd72ed.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\69611e09.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\6e392cca.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\73697201.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\755223a6.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\758b8342.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\75f8dbb8.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\76fece7.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\77fa9693.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\7b122626.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\88fdb0cf.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\8a69202d.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\8c15483.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\93fac749.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\a2ff1eee.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\aaa9a09.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\aabd6f0d.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\b31dae79.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\b81f9c13.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\c502d52a.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\d14cbeb2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\d422395e.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\d4baab1f.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\d4e29648.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\d64a25a1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\de03d3f7.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\e34a012a.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\e82b281e.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\ef6def13.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\f289ab02.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\f81421e1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\f8771f16.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\fcb15844.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\img\fe957f47.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\js\BgObject.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\js\DecroationObject.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\js\EditObject.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\js\EditObjectFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\js\EditView.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\js\GlobalData.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\js\ImageObject.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\js\SHLAlphaMaskFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\js\SelectGroup.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\js\TextObject.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\js\app.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\js\easeljs-0.8.1.combined.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\js\jquery-2.1.4.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\js\remodal.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\1c3b9e27.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\1c4610a4.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\1ccf1d6b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\213348e3.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\23eb0a98.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\23eb0a98.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\6056d7e5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\6056d7e5.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\8b7ca8da.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\931d5f0f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\9c940f60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\9c940f60.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\a7a777fd.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\e55a3fa5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\f9bd59a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\diyTest\msk\f9bd59a.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\dragTest\dragtest.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\dragTest\images\dog.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\dragTest\script\easeljs-0.8.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\APITest.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\AlphaMaskReveal.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\BarGraph.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\BitmapText.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\ButtonHelper.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Cache.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Cache_update.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Cache_vday.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\CurveTo.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\DOMElement.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\DoubleClickTest.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\DragAndDrop.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\DragAndDrop_hitArea.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\EventBubbling.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Filters.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Filters_animated.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Filters_input.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Filters_simple.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Game\Game.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Game\Ship.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Game\SpaceRock.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Game\sounds\break.mp3" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Game\sounds\break.ogg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Game\sounds\death.mp3" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Game\sounds\death.ogg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Game\sounds\music.mp3" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Game\sounds\music.ogg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Game\sounds\shot.mp3" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Game\sounds\shot.ogg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Game\sounds\spawn.mp3" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Game\sounds\spawn.ogg" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\GlobalToLocal1.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\GlobalToLocal2.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\GraphicsReuse.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\GraphicsTest.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\GraphicsTestTiny.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Graphics_setStrokeDash.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Graphics_simple.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Graphics_winding.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\HelloWorld.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Icons.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\LocalToGlobal.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Masks.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\MovieClip.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\RollOverMouseOver.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Sparkles.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\SpriteSheet.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\SpriteSheetBuilder.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\SpriteSheetBuilderMC\SpriteSheetBuilder_MovieClip.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\SpriteSheetBuilderMC\gunnertron_g.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\SpriteSheet_simple.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\SpriteSheet_tileset.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Text_links.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Text_multiline.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Text_simple.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Transform.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\Transform_simple.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\TwoStages.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\WebGL\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\WebGL\Runners.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\examples\WebGL\TwoStages.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\lib\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\lib\easeljs-0.8.1.combined.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\lib\easeljs-0.8.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\lib\easeljs-NEXT.combined.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\lib\easeljs-NEXT.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\lib\movieclip-0.8.1.combined.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\lib\movieclip-0.8.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\lib\movieclip-NEXT.combined.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\lib\movieclip-NEXT.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\lib\webgl-0.8.1.combined.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\lib\webgl-0.8.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\lib\webgl-NEXT.combined.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\lib\webgl-NEXT.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\createjs\events\Event.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\createjs\events\EventDispatcher.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\createjs\utils\Ticker.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\createjs\utils\extend.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\createjs\utils\indexOf.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\createjs\utils\promote.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\display\Bitmap.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\display\BitmapText.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\display\Container.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\display\DOMElement.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\display\DisplayObject.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\display\Graphics.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\display\MovieClip.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\display\Shadow.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\display\Shape.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\display\Sprite.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\display\SpriteContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\display\SpriteSheet.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\display\SpriteStage.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\display\Stage.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\display\Text.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\events\MouseEvent.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\filters\AlphaMapFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\filters\AlphaMaskFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\filters\BlurFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\filters\ColorFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\filters\ColorMatrix.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\filters\ColorMatrixFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\filters\Filter.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\geom\DisplayProps.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\geom\Matrix2D.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\geom\Point.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\geom\Rectangle.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\ui\ButtonHelper.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\ui\Touch.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\utils\SpriteSheetBuilder.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\utils\SpriteSheetUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\utils\UID.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\version.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\createjs\src\easeljs\version_movieclip.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\images\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\scripts\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\scripts\jquery-2.1.4.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\styles\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\sunhailin.github.io\styles\detial.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="sunhailin.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,17 +267,20 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="sunhailin.github.io" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SpriteStage.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../EaselJS-0.8.1/src/easeljs/display/SpriteStage.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0221484">
-              <caret line="384" column="7" selection-start-line="384" selection-start-column="7" selection-end-line="384" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.07111111" vertical-offset="0" max-vertical-offset="675">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -37,11 +290,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -54,13 +302,18 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="NamedScopeManager">
-    <order />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -69,6 +322,8 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
@@ -85,8 +340,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -107,43 +361,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -171,6 +399,40 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -201,6 +463,7 @@
       <listeners />
       <method />
     </configuration>
+    <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -215,26 +478,31 @@
       <workItem from="1439039268701" duration="1423000" />
       <workItem from="1439204706425" duration="36000" />
       <workItem from="1445139302461" duration="797000" />
+      <workItem from="1453109172496" duration="245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2256000" />
+    <option name="totallyTimeSpent" value="2501000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <editor active="false" />
     <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3665254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20558739" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -242,7 +510,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -286,6 +553,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -293,7 +565,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -301,7 +573,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -309,16 +581,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29357797">
-          <caret line="31" column="96" selection-start-line="31" selection-start-column="96" selection-end-line="31" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../EaselJS-0.8.1/src/easeljs/display/SpriteStage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0221484">
-          <caret line="384" column="7" selection-start-line="384" selection-start-column="7" selection-end-line="384" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.07111111" vertical-offset="0" max-vertical-offset="675">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
           <folding />
         </state>
       </provider>
