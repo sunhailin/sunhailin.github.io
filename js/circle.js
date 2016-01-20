@@ -16,8 +16,8 @@ $(function(){
     if(isP){
         totalCircleNumber=15;
         var outSize=50;
-        var fadeDistance=500;
-        var breakDistance=700;
+        var fadeDistance=400;
+        var breakDistance=600;
     }
 
     function Circle(){
@@ -36,8 +36,8 @@ $(function(){
     var canvas=$canvas[0];
     if(isP){
         $canvas.addClass("canvasTransform");
-        canvas.width=$(window).width()*3;
-        canvas.height=$(window).height()*3;
+        canvas.width=$(window).width()*2;
+        canvas.height=$(window).height()*2;
     }else{
         canvas.width=$(window).width();
         canvas.height=$(window).height();
@@ -45,8 +45,8 @@ $(function(){
 
     $(window).resize(function(){
         if(isP){
-            canvas.width=$(window).width()*3;
-            canvas.height=$(window).height()*3;
+            canvas.width=$(window).width()*2;
+            canvas.height=$(window).height()*2;
         }else{
             canvas.width=$(window).width();
             canvas.height=$(window).height();

@@ -11,7 +11,7 @@
     -moz-transform-origin: 0 0;
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
-    -moz-transform: scale(0.333333);
-    -webkit-transform: scale(0.333333);
-    transform: scale(0.333333);
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
 }
