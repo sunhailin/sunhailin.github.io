@@ -1,0 +1,24 @@
+/*reset*/
+body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li,form,button,input,textarea,td,th{
+    padding: 0;
+    margin: 0;
+}
+/*public*/
+html,body{
+    font-family: "微软雅黑";
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6em;
+}
+
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{
+    clear:both;
+}
