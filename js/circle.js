@@ -12,6 +12,14 @@ $(function(){
     var fadeDistance=300;
     var breakDistance=500;
 
+    var isP=isPhone();
+    if(isP){
+        totalCircleNumber=15;
+        var outSize=50;
+        var fadeDistance=500;
+        var breakDistance=700;
+    }
+
     function Circle(){
         this.speed=0;
         this.speedX=0;
@@ -24,13 +32,25 @@ $(function(){
     }
 
 
-    var $canvas=$("#circles").find("canvas")
+    var $canvas=$("#circles").find("canvas");
     var canvas=$canvas[0];
-    canvas.width=$(window).width();
-    canvas.height=$(window).height();
-    $(window).resize(function(){
+    if(isP){
+        $canvas.addClass("canvasTransform");
+        canvas.width=$(window).width()*3;
+        canvas.height=$(window).height()*3;
+    }else{
         canvas.width=$(window).width();
         canvas.height=$(window).height();
+    }
+
+    $(window).resize(function(){
+        if(isP){
+            canvas.width=$(window).width()*3;
+            canvas.height=$(window).height()*3;
+        }else{
+            canvas.width=$(window).width();
+            canvas.height=$(window).height();
+        }
     });
 
     var stage=new createjs.Stage(canvas);
@@ -142,5 +162,17 @@ $(function(){
 
     function distance(circle1,circle2){
         return Math.sqrt(Math.pow(circle1.x-circle2.x,2)+Math.pow(circle1.y-circle2.y,2));
+    }
+
+    function isPhone(){
+        var isPhone=false;
+        if(document.hasOwnProperty("ontouchstart")){
+            isPhone=true;
+        }
+        var isiOS = !!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        if(isiOS){
+            isPhone=true;
+        }
+        return isPhone;
     }
 });
