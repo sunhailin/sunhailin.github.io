@@ -15,9 +15,9 @@ $(function(){
     var isP=isPhone();
     if(isP){
         totalCircleNumber=15;
-        var outSize=50;
-        var fadeDistance=400;
-        var breakDistance=600;
+        outSize=50;
+        fadeDistance=400;
+        breakDistance=600;
     }
 
     function Circle(){
@@ -66,8 +66,7 @@ $(function(){
 
     function initCircles(){
         var i;
-        var l=totalCircleNumber;
-        for(i=0;i<l;i++){
+        for(i=0;i<totalCircleNumber;i++){
             var circle=new Circle();
             circle.x=$canvas.width()*Math.random();
             circle.y=$canvas.height()*Math.random();
@@ -169,8 +168,10 @@ $(function(){
         if(document.hasOwnProperty("ontouchstart")){
             isPhone=true;
         }
-        var isiOS = !!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-        if(isiOS){
+        var u = navigator.userAgent;
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        if(isiOS||isAndroid){
             isPhone=true;
         }
         return isPhone;
