@@ -29,6 +29,7 @@ $(function(){
         this.radius=0;
         this.shape=undefined;
         this.connectCircles=[];
+        this.lines=[];
     }
 
 
@@ -60,7 +61,7 @@ $(function(){
     var lineContainer=new createjs.Container();
     stage.addChild(lineContainer);
     initCircles();
-    connectCircle();
+    initLines();
     createjs.Ticker.framerate=60;
     createjs.Ticker.on("tick",stageUpdate);
 
@@ -90,9 +91,27 @@ $(function(){
         }
     }
 
+    function initLines(){
+        var i;
+        var j;
+        var l=circles.length;
+        for(i=0;i<l;i++){
+            var circle1=circles[i];
+            circle1.connectCircles=[];
+            for(j=i+1;j<l;j++){
+                if(i!==j){
+                    var circle2=circles[j];
+                    var line=new createjs.Shape();
+                    lineContainer.addChild(line);
+                    circle1.connectCircles.push(circle2);
+                    circle1.lines.push(line);
+                }
+            }
+        }
+    }
+
     function stageUpdate(){
         updateCirclePosition();
-        connectCircle();
         updateLine();
         stage.update();
     }
@@ -115,29 +134,7 @@ $(function(){
         }
     }
 
-    function connectCircle(){
-        var i;
-        var j;
-        var l=circles.length;
-        for(i=0;i<l;i++){
-            var circle1=circles[i];
-            circle1.connectCircles=[];
-            for(j=0;j<l;j++){
-                if(i!==j){
-                    var circle2=circles[j];
-                    if(circle2.connectCircles.indexOf(circle1)===-1){
-                        var dis=distance(circle1,circle2);
-                        if(dis<breakDistance){
-                            circle1.connectCircles.push(circle2);
-                        }
-                    }
-                }
-            }
-        }
-    }
-
     function updateLine(){
-        lineContainer.removeAllChildren();
         var i;
         var j;
         var l=circles.length;
@@ -146,15 +143,17 @@ $(function(){
             var ll=circle1.connectCircles.length;
             for(j=0;j<ll;j++){
                 var circle2=circle1.connectCircles[j];
-                var line=new createjs.Shape();
+                var line=circle1.lines[j];
+                line.graphics.clear();
                 var dis=distance(circle1,circle2);
                 var alphaParam=1;
-                if(dis>fadeDistance){
+                if(dis>breakDistance){
+                    continue;
+                }else if(dis>fadeDistance){
                     alphaParam=1-(dis-fadeDistance)/(breakDistance-fadeDistance);
                 }
                 line.alpha=lineOpacity*alphaParam;
                 line.graphics.beginStroke(lineColor).moveTo(circle1.x,circle1.y).lineTo(circle2.x,circle2.y);
-                lineContainer.addChild(line);
             }
         }
     }
