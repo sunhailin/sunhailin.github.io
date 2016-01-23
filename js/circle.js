@@ -32,9 +32,9 @@ $(function(){
         this.lines=[];
     }
 
-
-    var $canvas=$("#circles").find("canvas");
-    var canvas=$canvas[0];
+    //
+    //var $canvas=$("#circles").find("canvas");
+    //var canvas=$canvas[0];
     if(isP){
         $canvas.addClass("canvasTransform");
         canvas.width=$(window).width()*2;
