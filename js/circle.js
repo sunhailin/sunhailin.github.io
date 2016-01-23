@@ -32,7 +32,6 @@ $(function(){
         this.lines=[];
     }
 
-
     var $canvas=$("#circles").find("canvas");
     var canvas=$canvas[0];
     if(isP){
