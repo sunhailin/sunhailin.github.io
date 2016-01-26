@@ -38,7 +38,7 @@
     p.onIntroduction=function(e)
     {
         this.dispatchEvent(new createjs.Event("introduction"));
-    }
+    };
 
     window.MenuScene=createjs.promote(MenuScene,"Container");
 }(window));

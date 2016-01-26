@@ -81,7 +81,7 @@
     p.getHasBall=function()
     {
         return this.hasBall;
-    }
+    };
 
     p.setball=function(b)
     {
@@ -93,7 +93,7 @@
     p.getBall=function()
     {
         return this.ball;
-    }
+    };
 
     window.Square=createjs.promote(Square,"Container");
 }(window));
