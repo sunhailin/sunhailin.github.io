@@ -17,8 +17,10 @@
 }
 
 .avatar{
-    width: 400px;
-    height: 400px;
+    width: 50%;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
     margin: 50px auto 0 auto;
     border: 5px solid #cf1b1c;
     border-radius: 50%;
