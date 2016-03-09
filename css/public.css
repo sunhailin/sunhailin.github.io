@@ -12,6 +12,16 @@ html{
     font-size: 16px;
 }
 
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button,input[type=button]{
+    -webkit-appearance: none;
+}
+
 .clearfix:before,.clearfix:after{
     content:"";
     display:table;

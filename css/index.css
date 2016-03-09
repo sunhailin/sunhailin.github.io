@@ -113,8 +113,9 @@
     list-style: none;
 }
 .nav-box li{
+    float: left;
     display: inline-block;
-    width: 49%;
+    width: 33%;
     padding: 20px 0;
 }
 .nav-box a{

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的作品</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+
+    <link rel="stylesheet" href="../css/public.css">
+    <style>
+        li{
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li data-path="diyV1" data-imgnum="16">台历diyV1</li>
+    <li data-path="diyV2" data-imgnum="9">台历diyV2</li>
+    <li data-path="offline" data-imgnum="5">线下活动</li>
+    <li data-path="printpicture" data-imgnum="13">照片冲印</li>
+</ul>
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $(function(){
+        $("ul").on("click","li",function(){
+            var path=$(this).attr("data-path");
+            var imgnum=$(this).attr("data-imgnum");
+            window.open("detail.html?path="+path+"&imgnum="+imgnum+"&name="+$(this).html());
+        });
+    });
+</script>
+</body>
+</html>
