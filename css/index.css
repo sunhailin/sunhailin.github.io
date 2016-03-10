@@ -20,7 +20,7 @@
 .avatar{
     width: 200px;
     height: 200px;
-    margin: 50px auto 0 auto;
+    margin: 100px auto 0 auto;
     border: 5px solid #cf1b1c;
     border-radius: 50%;
     overflow: hidden;
@@ -99,10 +99,11 @@
 }
 /*导航*/
 .main-nav{
-    position: fixed;
+    /*position: fixed;*/
     left: 0;
     bottom: 0;
     width: 100%;
+    margin-top: 30px;
 }
 .nav-box{
     width: 90%;
@@ -110,6 +111,7 @@
     margin: 0 auto;
     text-align: center;
     border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
     list-style: none;
 }
 .nav-box li{
@@ -122,6 +124,7 @@
     color: #888;
     font-size: 20px;
     text-decoration: none;
+    transition: color 0.3s;
 }
 .nav-box a:hover{
     color:#000;
