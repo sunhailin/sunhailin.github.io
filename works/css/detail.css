@@ -1,13 +1,34 @@
 body{
     background-color: #333;
 }
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    text-align: center;
+}
+nav ul{
+    display: inline-block;
+    height: 100%;
+}
+nav li{
+    display: inline-block;
+    padding: 0 10px;
+    color: #fff;
+    line-height: 50px;
+    cursor: pointer;
+}
+.nav-active{
+    background-color: #186f1b;
+}
 .swiper-gallery-top{
     width: 100%;
-    height: 500px;
+    height: 480px;
+    margin-top: 20px;
 }
 .swiper-gallery-thumbs{
     width: 100%;
-    height: 100px;
+    height: 80px;
     padding: 10px 0;
     margin-top: 20px;
     background-color: #666;

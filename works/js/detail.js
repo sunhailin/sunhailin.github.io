@@ -3,6 +3,20 @@ $(function(){
     var path=getUrlParam("path");
     var imgnum=parseInt(getUrlParam("imgnum"),10);
 
+    if(!path||!imgnum){
+        var firstLi=$($("nav li")[0]);
+        document.title=firstLi.html();
+        path=firstLi.attr("data-path");
+        imgnum=parseInt(firstLi.attr("data-imgnum"),10);
+    }
+
+    $("li[data-path=\""+path+"\"]").addClass("nav-active");
+    $("ul").on("click","li",function(){
+        var npath=$(this).attr("data-path");
+        var nimgnum=$(this).attr("data-imgnum");
+        window.location.href="detail.html?path="+npath+"&imgnum="+nimgnum+"&name="+$(this).html();
+    });
+
     var completeArr=[];
     var completeStr;
     var i;
@@ -26,7 +40,7 @@ $(function(){
         prevButton: '.swiper-button-prev'
     });
     var swiperThumbs = new Swiper('.swiper-gallery-thumbs',{
-        slidesPerView: 20,
+        slidesPerView: 4,
         spaceBetween: 10,
         centeredSlides: true,
         touchRatio: 0.2,
