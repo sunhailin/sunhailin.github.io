@@ -58,7 +58,7 @@
         var i,j;
         for(i=0;i<GameScene.HENG;i++)
         {
-            this.squaresInPosition[i]=new Array();
+            this.squaresInPosition[i]=[];
             for(j=0;j<GameScene.SHU;j++)
             {
                 this.squareNumArray[i*GameScene.SHU+j]=i*GameScene.SHU+j;

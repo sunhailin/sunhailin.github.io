@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>如何养草龟</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+
+    <link href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/fullPage.js/2.7.8/jquery.fullPage.min.css" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Microsoft YaHei","微软雅黑","Helvetica Neue",Helvetica,"Hiragino Sans GB",Arial,sans-serif;
+        }
+        p{
+            margin: 0;
+        }
+        .container{
+            position: relative;
+            width: 1226px;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            color: #6a727a;
+        }
+        .content{
+            position: absolute;
+        }
+        #fp-nav ul li a span{
+            background-color: #757575;
+        }
+        #fp-nav ul li a.active span{
+            width: 8px;
+            height: 8px;
+            margin: -4px 0 0 -4px;
+            border: 1px solid #6aadf1;
+            background: none;
+        }
+        #fp-nav ul li .fp-tooltip{
+            color: #d4d4d4;
+        }
+        #img1{
+            top: 180px;
+            width: 800px;
+            height: 400px;
+            background: #fafafa url("img/caogui1.jpg") no-repeat 0 center;
+            background-size: contain;
+            z-index: 1;
+        }
+        #downArrow{
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            width: 11px;
+            height: 24px;
+            margin-left: -5px;
+            background: url("img/down-arrow.png") repeat-y;
+            -webkit-animation: downArrow 2s linear infinite;
+        }
+        @keyframes downArrow {
+            0%{
+                background-position-y: -60px;
+            }
+            100%{
+                background-position-y: 0;
+            }
+        }
+        #text1{
+            top: 180px;
+            left: 50%;
+            z-index: 2;
+        }
+        #text1 h1{
+            margin: 10px 0;
+            font-size: 50px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+<div id="fullpageContainer">
+    <div class="section" id="page1">
+        <div class="container">
+            <div class="content" id="img1"></div>
+            <div class="content" id="text1">
+                <h1>中华草龟</h1>
+                <p>中华草龟 俗称乌龟，是我国龟类当中分布最广，在国际市场上，中华草龟十分畅销。日本、菲律宾以及欧美各国人民将其视为象征“吉祥，延年益寿”之物。中文学名：中华草龟，别称，乌龟、金龟、金线龟、墨龟、泥龟、山龟、臭青龟、长寿龟。</p>
+            </div>
+        </div>
+        <span id="downArrow"></span>
+    </div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+</div>
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/fullPage.js/2.7.8/jquery.fullPage.min.js"></script>
+<script>
+    $(function(){
+        $("#fullpageContainer").fullpage({
+            navigation:true,
+            navigationTooltips:["1","2","3","4"]
+        });
+    });
+</script>
+</body>
+</html>
