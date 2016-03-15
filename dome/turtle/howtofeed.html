@@ -197,8 +197,8 @@
             margin-top: 56px;
             color: #fff;
             z-index: 2;
-            -webkit-transform: rotate3d(0,1,0,90deg);
-            transform: rotate3d(0,1,0,90deg));
+            -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg));
             -webkit-transition: transform 1s;
             transition: transform 1s;
         }
@@ -435,8 +435,8 @@
                     $("#text2").css("-webkit-transform", "translate3d(0,40px,0)");
                     break;
                 case 3:
-                    $("#text3").css("transform", "rotate3d(0,1,0,90deg)");
-                    $("#text3").css("-webkit-transform", "rotate3d(0,1,0,90deg)");
+                    $("#text3").css("transform", "rotateY(90deg)");
+                    $("#text3").css("-webkit-transform", "rotateY(90deg)");
                     break;
                 case 4:
                     $("#text4").css("transform", "scale(0)");
@@ -458,8 +458,8 @@
                     $("#text2").css("-webkit-transform", "translate3d(0,0,0)");
                     break;
                 case 3:
-                    $("#text3").css("transform", "rotate3d(0,0,0,90deg)");
-                    $("#text3").css("-webkit-transform", "rotate3d(0,0,0,90deg)");
+                    $("#text3").css("transform", "rotateY(0)");
+                    $("#text3").css("-webkit-transform", "rotateY(0)");
                     break;
                 case 4:
                     $("#text4").css("transform", "scale(1)");
