@@ -1,0 +1,126 @@
+body {
+  font-size: 14px;
+}
+ul {
+  list-style-type: none;
+}
+p {
+  margin: 0;
+}
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.nav {
+  width: 100%;
+  height: 46px;
+  color: #fff;
+  background: linear-gradient(to bottom, #086ed5, #055db5);
+  border-bottom: 1px solid #044e97;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+.nav-logo {
+  float: left;
+  width: 61px;
+  height: 46px;
+}
+.nav-logo a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url("../img/nav-logo.png") center no-repeat;
+}
+.search-bar {
+  float: left;
+  position: relative;
+  width: 240px;
+  margin: 7px 0 0 12px;
+}
+.search-bar input {
+  width: 100%;
+  padding: 7px 50px 7px 10px;
+  color: #000;
+  box-sizing: border-box;
+  border: 1px solid #044e97;
+  border-radius: 4px;
+  background-color: #e1eaf2;
+  transition: background-color 0.2s ease-in-out;
+}
+.search-bar input:focus {
+  background-color: #fff;
+}
+.search-bar button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 32px;
+  background: linear-gradient(to bottom, #0e7bef, #0d73da);
+  box-sizing: border-box;
+  border: 1px solid #045bb2;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  outline: 0;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+}
+.nav-list {
+  float: left;
+  position: relative;
+}
+.nav-list ul {
+  padding: 0;
+  margin: 0 0 0 18px;
+}
+.nav-list li {
+  position: relative;
+  float: left;
+  width: 48px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  cursor: pointer;
+}
+.nav-active {
+  background: linear-gradient(to bottom, #055fb8, #095fb3);
+}
+.me {
+  float: right;
+  position: relative;
+  height: 46px;
+  margin-left: 30px;
+  margin-right: 35px;
+  line-height: 46px;
+}
+.me div {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background: url("../img/nav-avatar.jpg") center no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+.me p {
+  display: inline-block;
+}
+.ask {
+  float: right;
+  width: 66px;
+  height: 32px;
+  margin-top: 7px;
+  border: 1px solid #045bb2;
+  border-radius: 4px;
+  background: linear-gradient(to bottom, #0e7bef, #0d73da);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}

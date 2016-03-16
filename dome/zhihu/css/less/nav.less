@@ -1,0 +1,108 @@
+@import "config";
+@import "common";
+.nav{
+  width: 100%;
+  height: @navHeight;
+  color: #fff;
+  background: linear-gradient(to bottom,@navStartColor,@navEndColor);
+  border-bottom: 1px solid @navBorderColor;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.25),inset 0 1px 0 rgba(255,255,255,0.15);
+}
+.nav-logo{
+  .fl();
+  width: @navLogoWidth;
+  height: @navHeight;
+  a{
+    .dib();
+    .full();
+    background: url(@navLogoPath) center no-repeat;
+  }
+}
+
+.search-bar{
+  .fl();
+  .pr();
+  width: @navSearchWidth;
+  margin: @navSearchTop 0 0 @navSearchLeft;
+  input{
+    width: 100%;
+    padding: @navSearchPaddingV @navSearchPaddingRight @navSearchPaddingV @navSearchPaddingLeft;
+    color:#000;
+    box-sizing: border-box;
+    border: 1px solid @navBorderColor;
+    border-radius: @radiusBigSize;
+    background-color: @navSearchBGColor;
+    &:focus{
+      background-color: @navSearchBGColorFocus;
+    }
+    transition: background-color 0.2s ease-in-out;
+  }
+  button{
+    .pa();
+    top:0;
+    right: 0;
+    width: @navSearchButtonWidth;
+    height: @navSearchButtonHeight;
+    background: linear-gradient(to bottom,@navSearchButtonStartColor,@navSearchButtonEndColor);
+    box-sizing: border-box;
+    border: 1px solid @navSearchButtonBorderColor;
+    border-top-right-radius: @radiusBigSize;
+    border-bottom-right-radius: @radiusBigSize;
+    outline: 0;
+    .cp();
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05),inset 0 1px 1px rgba(255,255,255,0.15);
+  }
+}
+
+.nav-list{
+  .fl();
+  .pr();
+  ul{
+    padding: 0;
+    margin: 0 0 0 @navListMarginLeft;
+  }
+  li{
+    .pr();
+    .fl();
+    width:@navListWidth;
+    height: @navHeight;
+    line-height: @navHeight;
+    .tac();
+    .cp();
+  }
+}
+.nav-active{
+  background: linear-gradient(to bottom,@navListActiveStartColor,@navListActiveEndColor);
+}
+
+.me{
+  .fr();
+  .pr();
+  height: @navHeight;
+  margin-left: @navMeMarginLeft;
+  margin-right: @navMeMarginRight;
+  line-height: @navHeight;
+  div{
+    .dib();
+    width: @navMeAvatarSize;
+    height: @navMeAvatarSize;
+    background: url(@navMeAvatar) center no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+  }
+  p{
+    .dib();
+  }
+}
+
+.ask{
+  .fr();
+  width:@navAskWidth;
+  height:@navAskHeight;
+  margin-top: @navAskMarginTop;
+  border: 1px solid @navAskBorderColor;
+  border-radius: @radiusBigSize;
+  background: linear-gradient(to bottom,@navAskStartColor,@navAskEndColor);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05),inset 0 1px 1px rgba(255,255,255,0.15);
+  .cp();
+}
