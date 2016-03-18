@@ -1,4 +1,5 @@
 
 /.idea
+/npm-debug.log
 /sunhailin.github.io.iml
 node_modules

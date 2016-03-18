@@ -7,6 +7,10 @@ ul {
 p {
   margin: 0;
 }
+a {
+  color: #000;
+  text-decoration: none;
+}
 .wrapper {
   width: 100%;
   max-width: 960px;
@@ -14,8 +18,9 @@ p {
   margin-right: auto;
 }
 .clearfix:after {
-  content: "";
+  content: "\200B";
   display: block;
+  height: 0;
   clear: both;
 }
 .clearfix {
@@ -123,4 +128,255 @@ p {
   background: linear-gradient(to bottom, #0e7bef, #0d73da);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 1px rgba(255, 255, 255, 0.15);
   cursor: pointer;
+}
+.main-wrapper {
+  padding: 30px 6px 0 6px;
+  box-sizing: border-box;
+}
+.main {
+  float: left;
+  margin-right: 300px;
+}
+.content-header {
+  margin-bottom: 10px;
+  color: #666;
+}
+.content-header-left {
+  float: left;
+}
+.content-header-right {
+  float: right;
+  font-size: 13px;
+}
+.content-header-right span {
+  cursor: pointer;
+}
+.content-header-right span:hover {
+  color: #259;
+  text-decoration: underline;
+}
+.content {
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+.content + .content {
+  border-top: 1px solid #eee;
+}
+.content-left {
+  float: left;
+  display: block;
+}
+.content-left img {
+  width: 38px;
+  height: auto;
+  border-radius: 3px;
+}
+.content-left p {
+  width: 100%;
+  padding: 3px 0;
+  color: #259;
+  background-color: #eff6fa;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+.content-left p:hover {
+  color: #fff;
+  background-color: #698ebf;
+}
+.content-right {
+  margin-left: 48px;
+}
+.article-header {
+  color: #666;
+  overflow: hidden;
+}
+.article-header-left {
+  float: left;
+  font-size: 13px;
+}
+.article-header-left a {
+  color: #666;
+}
+.article-header-left a:hover {
+  color: #259;
+  text-decoration: underline;
+}
+.article-header-right {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+}
+.article-header-right:hover {
+  color: #259;
+}
+.article-title h1 {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.article-title a {
+  color: #259;
+}
+.article-title a:hover {
+  text-decoration: underline;
+}
+.article-author {
+  padding: 5px 0;
+}
+.article-author span {
+  font-size: 13px;
+}
+.article-author span:first-child {
+  font-weight: bold;
+}
+.article-content {
+  margin-top: 3px;
+  color: #222;
+  font-size: 13px;
+  line-height: 1.7;
+  cursor: pointer;
+}
+.article-content span {
+  padding: 3px;
+  border-radius: 3px;
+  color: #259;
+  cursor: pointer;
+}
+.article-content span:hover {
+  background-color: #eff6fa;
+}
+.article-footer {
+  padding: 10px 0;
+  color: #666;
+  font-size: 13px;
+}
+.article-footer a {
+  margin-right: 8px;
+  color: #666;
+}
+.article-footer a:hover {
+  color: #259;
+  text-decoration: underline;
+}
+.article-footer span {
+  margin-right: 8px;
+}
+.article-footer i {
+  margin-right: 3px;
+}
+.more-btn {
+  width: 100%;
+  padding: 5px 0;
+  margin: 30px 0;
+  color: #666;
+}
+.aside {
+  float: left;
+  width: 270px;
+  margin-left: -270px;
+  color: #666;
+  font-size: 13px;
+}
+.aside-img {
+  margin-bottom: 20px;
+  line-height: 0;
+}
+.aside-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.mine {
+  margin-bottom: 10px;
+}
+.mine ul {
+  padding: 0;
+}
+.mine li {
+  line-height: 28px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.mine li span span {
+  padding: 0 5px;
+  margin-left: 5px;
+  color: #fff;
+  background-color: #666;
+  border-radius: 7px;
+}
+.mine li span span:hover {
+  background-color: #259;
+}
+.mine li:hover {
+  color: #259;
+  background-color: #eff6fa;
+}
+.mine li:hover span span {
+  background-color: #259;
+}
+.mine i {
+  margin-right: 10px;
+}
+.public-area {
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+.public-area ul {
+  padding: 0;
+}
+.public-area li {
+  line-height: 28px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.public-area li:hover {
+  color: #259;
+  background-color: #eff6fa;
+}
+.public-area i {
+  margin-right: 10px;
+}
+.zhihu-table {
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+.table-header h1 {
+  float: left;
+  margin: 0;
+  color: #000;
+  font-size: 14px;
+}
+.table-header div {
+  float: right;
+}
+.table-header div a {
+  color: #698ebf;
+}
+.table-header div a:hover {
+  color: #259;
+  text-decoration: underline;
+}
+.table-body ul {
+  padding: 0;
+}
+.table-body li {
+  padding: 5px 0 5px 10px;
+  line-height: 28px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.table-body li:hover {
+  color: #259;
+  background-color: #eff6fa;
+}
+.table-body img {
+  vertical-align: middle;
+  border-radius: 3px;
+}
+.table-body span {
+  padding-left: 10px;
+  vertical-align: middle;
+}
+.aside-footer a {
+  color: #666;
 }

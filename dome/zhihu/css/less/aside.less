@@ -1,0 +1,125 @@
+@import "config";
+@import "common";
+.aside{
+  .fl();
+  width: @asideWidth;
+  margin-left: -@asideWidth;
+  color: @globalFadeFontColor;
+  font-size: @globalFontSmallSize;
+}
+.aside-img{
+  margin-bottom: @asideImgMarginBottom;
+  line-height: 0;
+  img{
+    width: 100%;
+    height: auto;
+    border-radius: @asideImgRadius;
+  }
+}
+.mine{
+  margin-bottom: @asideGroupMarginBottom;
+  ul{
+    padding: 0;
+  }
+  li{
+    line-height: @asideListLineHeight;
+    border-radius: @radiusSmallSize;
+    .cp();
+    span{
+      span{
+        padding: 0 5px;
+        margin-left: 5px;
+        color: #fff;
+        background-color: @globalFadeFontColor;
+        border-radius: 7px;
+        &:hover{
+          background-color:@globalLinkHoverColor;
+        }
+      }
+    }
+    &:hover{
+      color:@globalLinkHoverColor;
+      background-color: @globalFadeBlue;
+      span{
+        span{
+          background-color:@globalLinkHoverColor;
+        }
+      }
+    }
+  }
+  i{
+    margin-right: @asideIconMarginLeft;
+  }
+}
+.public-area{
+  padding-top: @asideGroupPaddingTop;
+  border-top: 1px solid @contentBorderFadeColor;
+  ul{
+    padding: 0;
+  }
+  li{
+    line-height: @asideListLineHeight;
+    border-radius: @radiusSmallSize;
+    .cp();
+    &:hover{
+      color:@globalLinkHoverColor;
+      background-color: @globalFadeBlue;
+    }
+  }
+  i{
+    margin-right: @asideIconMarginLeft;
+  }
+}
+
+.zhihu-table{
+  padding-top: @asideGroupPaddingTop;
+  border-top: 1px solid @contentBorderFadeColor;
+}
+.table-header{
+  h1{
+    .fl();
+    margin: 0;
+    color: #000;
+    font-size: @globalFontSize;
+  }
+  div{
+    .fr();
+    a{
+      color: @globalBlue;
+      &:hover{
+        color: @globalLinkHoverColor;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.table-body{
+  ul{
+    padding: 0;
+  }
+  li{
+    padding: @asideTableBodyPaddingV 0 @asideTableBodyPaddingV @asideTableBodyPaddingLeft;
+    line-height: @asideListLineHeight;
+    border-radius: @radiusSmallSize;
+    .cp();
+    &:hover{
+      color:@globalLinkHoverColor;
+      background-color: @globalFadeBlue;
+    }
+  }
+  img{
+    vertical-align: middle;
+    border-radius: @radiusSmallSize;
+  }
+  span{
+    padding-left: @asideTableItemPaddingLeft;
+    vertical-align: middle;
+  }
+}
+
+.aside-footer{
+
+  a{
+    color: @globalFadeFontColor;
+  }
+}

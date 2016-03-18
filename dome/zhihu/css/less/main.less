@@ -1,0 +1,158 @@
+@import "config";
+@import "common";
+
+.main-wrapper{
+  padding: @mainPaddingTop @mainPaddingH 0 @mainPaddingH;
+  box-sizing: border-box;
+}
+
+.main{
+  .fl();
+  margin-right: @mainMarginRight;
+}
+
+.content-header{
+  margin-bottom: @contentHeaderMarginBottom;
+  color: @globalFadeFontColor;
+}
+
+.content-header-left{
+  .fl();
+}
+.content-header-right{
+  .fr();
+  font-size: @globalFontSmallSize;
+  span{
+    .cp();
+    &:hover{
+      color: @globalLinkHoverColor;
+      text-decoration: underline;
+    }
+  }
+}
+
+.content{
+  padding-top: @contentPaddingTop;
+  border-top:1px solid @contentBorderColor;
+}
+.content+.content{
+  border-top:1px solid @contentBorderFadeColor;
+}
+
+.content-left{
+  .fl();
+  .db();
+  img{
+    width: @topicImageSize;
+    height: auto;
+    border-radius: @radiusSmallSize;
+  }
+  p{
+    width: 100%;
+    padding: @contentLeftNumPaddingV 0;
+    color:@globalLinkHoverColor;
+    background-color: @globalFadeBlue;
+    border-radius: @radiusSmallSize;
+    .cp();
+    .tac();
+    &:hover{
+      color: #fff;
+      background-color: @globalBlue;
+    }
+  }
+}
+.content-right{
+  margin-left: @contentRightMarginLeft;
+}
+
+.article-header{
+  color: @globalFadeFontColor;
+  overflow: hidden;
+}
+
+.article-header-left{
+  .fl();
+  font-size: @globalFontSmallSize;
+  a{
+    color: @globalFadeFontColor;
+    &:hover{
+      color: @globalLinkHoverColor;
+      text-decoration: underline;
+    }
+  }
+}
+.article-header-right{
+  .fr();
+  .cp();
+  color: @contentBorderColor;
+  &:hover{
+    color: @globalLinkHoverColor;
+  }
+}
+
+.article-title{
+  h1{
+    margin: @titleMarginV 0;
+    font-size: @globalFontSize;
+  }
+  a{
+    color: @globalLinkHoverColor;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.article-author{
+    padding: @articleAuthorPaddingV 0;
+    span{
+        font-size:@globalFontSmallSize;
+        &:first-child{
+        font-weight: bold;
+    }
+   }
+}
+
+.article-content{
+  margin-top: @articleContentMarginTop;
+  color:@globalFontColor;
+  font-size: @globalFontSmallSize;
+  line-height: @articleLineHeight;
+  .cp();
+  span{
+    padding: @articleContentMorePadding;
+    border-radius: @radiusSmallSize;
+    color: @globalLinkHoverColor;
+    .cp();
+    &:hover{
+      background-color: @globalFadeBlue;
+    }
+  }
+}
+
+.article-footer{
+    padding: @articleFooterPaddingV 0;
+    color: @globalFadeFontColor;
+    font-size: @globalFontSmallSize;
+    a{
+        margin-right: @articleFooterMarginRight;
+        color: @globalFadeFontColor;
+        &:hover{
+          color: @globalLinkHoverColor;
+          text-decoration: underline;
+        }
+    }
+    span{
+      margin-right: @articleFooterMarginRight;
+    }
+    i{
+      margin-right: @articleFooterIconMarginRight;
+    }
+}
+
+.more-btn{
+  width: 100%;
+  padding: @moreBtnPaddingV 0;
+  margin: @moreBtnMarginV 0;
+  color: @globalFadeFontColor;
+}
