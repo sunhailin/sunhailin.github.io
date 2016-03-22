@@ -1,5 +1,6 @@
 
 /.idea
 /npm-debug.log
+/.vscode
 /sunhailin.github.io.iml
 node_modules
