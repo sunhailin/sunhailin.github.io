@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>垂直居中的几种方法</title>
+    <style>
+        body{
+            font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+        }
+        section{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        h1{
+            margin: 10px 0;
+        }
+        .container{
+            height: 300px;
+            background-color: #ccc;
+        }
+
+        #div1{
+            line-height: 300px;
+        }
+        #div1 img{
+            vertical-align: middle;
+        }
+
+        #div2{
+            display: table;
+        }
+        #div2 div{
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        #div3{
+            position: relative;
+        }
+        #div3 img{
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin: -70px 0 0 -94px;
+        }
+
+        #div4{
+            position: relative;
+        }
+        #div4 img{
+            position: absolute;
+            top:0;
+            bottom:0;
+            margin: auto;
+        }
+
+        #div5{
+            height: auto;
+        }
+        #div5 div{
+            padding: 20px 0;
+        }
+
+        #div6{
+
+        }
+        #floater{
+            float: left;
+            width: 100%;
+            height: 50%;
+            margin-bottom: -70px;
+        }
+        #div6 img{
+            clear: both;
+        }
+
+        #div7{
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <h1>lineHeight方法</h1>
+    <div class="container" id="div1">
+        <img src="test.png">
+        <span>一行文字</span>
+    </div>
+</section>
+<section>
+    <h1>table布局方法</h1>
+    <div class="container" id="div2">
+        <div><img src="test.png"></div>
+        <div><span>一行文字</span></div>
+    </div>
+</section>
+<section>
+    <h1>绝对定位和负边距方法</h1>
+    <div class="container" id="div3">
+        <img src="test.png">
+        <span>一行文字</span>
+    </div>
+</section>
+<section>
+    <h1>绝对定位和auto边距方法</h1>
+    <div class="container" id="div4">
+        <img src="test.png">
+        <span>一行文字</span>
+    </div>
+</section>
+<section>
+    <h1>上下相同内边距方法</h1>
+    <div class="container" id="div5">
+        <div>
+            <p>一行文字</p>
+            <p>一行文字</p>
+        </div>
+    </div>
+</section>
+<section>
+    <h1>float方法</h1>
+    <div class="container" id="div6">
+        <div id="floater"></div>
+        <img src="test.png">
+    </div>
+</section>
+<section>
+    <h1>flexbox方法</h1>
+    <div class="container" id="div7">
+        <img src="test.png">
+        <span>一行文字</span>
+    </div>
+</section>
+</body>
+</html>

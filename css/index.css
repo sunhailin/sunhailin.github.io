@@ -75,12 +75,12 @@
         transform: rotate(0deg);
     }
     50%{
-        -webkit-transform: rotate(35deg);
-        transform: rotate(35deg);
+        -webkit-transform: rotate(-35deg);
+        transform: rotate(-35deg);
     }
     100%{
-        -webkit-transform: rotate(20deg);
-        transform: rotate(20deg);
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
     }
 }
 @keyframes avatar-animation-revers {
