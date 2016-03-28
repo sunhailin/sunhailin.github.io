@@ -8,21 +8,28 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="email=no">
-
+    <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="../css/public.css">
     <style>
+        body{
+            margin-top: 200px;
+            background-color: #333;
+            text-align: center;
+            overflow: hidden;
+        }
         li{
             font-size: 20px;
+            line-height: 20px;
             cursor: pointer;
         }
     </style>
 </head>
 <body>
 <ul>
-    <li data-path="diyV1" data-imgnum="16">台历diyV1</li>
-    <li data-path="diyV2" data-imgnum="9">台历diyV2</li>
-    <li data-path="offline" data-imgnum="5">线下活动</li>
-    <li data-path="printpicture" data-imgnum="13">照片冲印</li>
+    <li class="button purple" data-path="diyV1" data-imgnum="16"><div class="shine"></div><span>台历diyV1</span></li>
+    <li class="button blue" data-path="diyV2" data-imgnum="9"><div class="shine"></div><span>台历diyV2</span></li>
+    <li class="button green" data-path="offline" data-imgnum="5"><div class="shine"></div><span>线下活动</span></li>
+    <li class="button red" data-path="printpicture" data-imgnum="13"><div class="shine"></div><span>照片冲印</span></li>
 </ul>
 <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script>
@@ -30,7 +37,7 @@
         $("ul").on("click","li",function(){
             var path=$(this).attr("data-path");
             var imgnum=$(this).attr("data-imgnum");
-            window.open("detail.html?path="+path+"&imgnum="+imgnum+"&name="+$(this).html());
+            window.open("detail.html?path="+path+"&imgnum="+imgnum+"&name="+$(this).find("span").html());
         });
     });
 </script>
