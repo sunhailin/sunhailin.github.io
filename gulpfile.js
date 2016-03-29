@@ -61,10 +61,18 @@ var gls=require("gulp-live-server");
 //
 //gulp.task("default",["domeServer","domeWatchLess"]);
 
-gulp.task("verticalMiddleServer", function () {
+//gulp.task("verticalMiddleServer", function () {
+//    var server=gls.static("/");
+//    server.start();
+//    gulp.watch(["dome/verticalMiddle/index.html"],function(file){
+//        server.notify.apply(server,[file]);
+//    });
+//});
+
+gulp.task("absoluteLayoutServer", function () {
     var server=gls.static("/");
     server.start();
-    gulp.watch(["dome/verticalMiddle/index.html"],function(file){
+    gulp.watch(["dome/absoluteLayout/*","dome/absoluteLayout/css/*"],function(file){
         server.notify.apply(server,[file]);
     });
 });
