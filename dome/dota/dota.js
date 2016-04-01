@@ -1,4 +1,0 @@
-var str=["axe","aymw","cj","ck","cx","cz","dn","ds","dy","es","fk","fmj","ga","gb","hm","hsk","jl","jm","jt","klw","lq","lr","mm","mr","pg","rm","sb","siqi","sk","sq","sven","sw","tiny","tm","ud","xd","xg","xm"];
-var agi=["am","bh","bs","dg","dh","fj","hjzl","hq","hs","hz","jb","jd","ln","mds","mln","mp","my","pa","sa","sf","slk","sr","ta","ug","vp","vs","xh","xkl","xnj","xq","xz","ym","zz"];
-var int=["aa","anmu","bl","bn","br","chen","cl","cm","furion","gf","grz","hl","hn","hx","lbk","lion","ll","lmm","lp","lt","mt","od","pk","qop","sd","slf","ss","stl","swxz","sy","tk","tn","ws","wr","wsj","wyy","xl","xy","zdr","zs"];
-console.log(str.length+agi.length+int.length);

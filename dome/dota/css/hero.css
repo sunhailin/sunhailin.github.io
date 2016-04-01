@@ -1,0 +1,80 @@
+body{
+    color: #6e6e6e;
+    background-color: #141516;
+}
+.clearfix:after{
+    content:" ";
+    height: 0;
+    display: block;
+    clear: both;
+}
+.header{
+    width: 100%;
+    min-height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.main{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 5px solid #501f1a;
+    overflow: hidden;
+}
+.hero-box{
+    height: 270px;
+    text-align: center;
+    line-height: 0;
+    overflow: hidden;
+}
+.hero-box li{
+    display: inline-block;
+    width: 127px;
+    height: 71px;
+    margin: 10px 10px 0 10px;
+    border: 3px solid #fff;
+    border-radius: 2px;
+    background: center no-repeat;
+    transition: border-color 0.2s linear;
+    cursor: move;
+}
+.hero-box li.justifyfix{
+    display: inline-block;
+    width: 133px;
+    height: 0;
+    margin: 0 10px 0 10px;
+    border: none;
+}
+.hero-box li:hover{
+    border-color: #d2502c;
+}
+
+.hero-type li{
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+}
+.hero-type p{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    line-height: 100px;
+    font-size: 30px;
+    border: 3px solid #2a2c2d;
+    border-radius: 50%;
+    text-align: center;
+    transition: border-color 0.2s linear;
+}
+.hero-type p:hover{
+    border-color: #ccc;
+}
+.target-active{
+    border-color: #ccc !important;
+}
+.target-error{
+    border-color: #d2502c !important;
+}
+.target-right{
+    border-color: #5dcb5d !important;
+}

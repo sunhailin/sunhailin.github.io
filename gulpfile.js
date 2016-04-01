@@ -69,10 +69,18 @@ var gls=require("gulp-live-server");
 //    });
 //});
 
-gulp.task("absoluteLayoutServer", function () {
+//gulp.task("absoluteLayoutServer", function () {
+//    var server=gls.static("/");
+//    server.start();
+//    gulp.watch(["dome/absoluteLayout/*","dome/absoluteLayout/css/*"],function(file){
+//        server.notify.apply(server,[file]);
+//    });
+//});
+
+gulp.task("dotaServer", function () {
     var server=gls.static("/");
     server.start();
-    gulp.watch(["dome/absoluteLayout/*","dome/absoluteLayout/css/*"],function(file){
+    gulp.watch(["dome/dota/*","dome/dota/css/*"],function(file){
         server.notify.apply(server,[file]);
     });
 });
