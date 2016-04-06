@@ -136,8 +136,8 @@ this.diyeditor=this.diyeditor||{};
         this.divObject.style.position="absolute";
         this.divObject.style.webkitTransformOrigin="0 0";
         this.divObject.style.transformOrigin="0 0";
-        this.divObject.style.webkitMaskRepeat="no-repeat";
-        this.divObject.style.maskRepeat="no-repeat";
+        //this.divObject.style.webkitMaskRepeat="no-repeat";
+        //this.divObject.style.maskRepeat="no-repeat";
     };
 
     p.setMask=function(px,py,pw,ph,purl){
