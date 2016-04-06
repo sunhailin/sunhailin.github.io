@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   background-color: #c2edf4;
+  overflow-x: hidden;
 }
 p {
   margin: 0;
@@ -148,12 +149,54 @@ header h2 {
   border-bottom: 20px solid transparent;
 }
 .content a {
-  padding-left: 30px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30px;
   color: #41838e;
   text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .content a:hover {
   text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .check {
+    display: none;
+  }
+  .list:before {
+    display: none;
+  }
+  .list li {
+    margin-top: 20px;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+  }
+  .content {
+    height: 60px;
+    line-height: 60px;
+    margin-left: 50px;
+  }
+  .content:before {
+    display: none;
+  }
+  .content p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 90%;
+    box-sizing: border-box;
+  }
+  .content p:before {
+    display: none;
+  }
+  .content a {
+    padding: 0 10px;
+  }
 }
 .wrapper {
   width: 100%;

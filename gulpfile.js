@@ -32,34 +32,34 @@ var gls=require("gulp-live-server");
 
 //gulp.task("default",["zhihuServer","zhihuWatchLess"]);
 
-//var domeLessAll="dome/css/less/*.less";
-//var domeLessPath="dome/css/less/dome.less";
-//var domeOutCssPath="dome/css";
-//var domeHtmlPath="dome/index.html";
-//
-//gulp.task("domeServer", function () {
-//    var server=gls.static("/");
-//    server.start();
-//    gulp.watch([domeOutCssPath+"/*.css",domeHtmlPath],function(file){
-//        server.notify.apply(server,[file]);
-//    });
-//});
-//
-//gulp.task("domeLess",function(){
-//    gulp.src(domeLessPath)
-//        .pipe(less())
-//        .pipe(autoPreFixer({
-//            browsers:["last 2 versions"],
-//            remove:true
-//        }))
-//        .pipe(gulp.dest(domeOutCssPath));
-//});
-//
-//gulp.task("domeWatchLess",function(){
-//    gulp.watch(domeLessAll,["domeLess"]);
-//});
-//
-//gulp.task("default",["domeServer","domeWatchLess"]);
+var domeLessAll="dome/css/less/*.less";
+var domeLessPath="dome/css/less/dome.less";
+var domeOutCssPath="dome/css";
+var domeHtmlPath="dome/index.html";
+
+gulp.task("domeServer", function () {
+    var server=gls.static("/");
+    server.start();
+    gulp.watch([domeOutCssPath+"/*.css",domeHtmlPath],function(file){
+        server.notify.apply(server,[file]);
+    });
+});
+
+gulp.task("domeLess",function(){
+    gulp.src(domeLessPath)
+        .pipe(less())
+        .pipe(autoPreFixer({
+            browsers:["last 2 versions"],
+            remove:true
+        }))
+        .pipe(gulp.dest(domeOutCssPath));
+});
+
+gulp.task("domeWatchLess",function(){
+    gulp.watch(domeLessAll,["domeLess"]);
+});
+
+gulp.task("default",["domeServer","domeWatchLess"]);
 
 //gulp.task("verticalMiddleServer", function () {
 //    var server=gls.static("/");
@@ -77,10 +77,10 @@ var gls=require("gulp-live-server");
 //    });
 //});
 
-gulp.task("dotaServer", function () {
-    var server=gls.static("/");
-    server.start();
-    gulp.watch(["dome/dota/*","dome/dota/css/*"],function(file){
-        server.notify.apply(server,[file]);
-    });
-});
+//gulp.task("dotaServer", function () {
+//    var server=gls.static("/");
+//    server.start();
+//    gulp.watch(["dome/dota/*","dome/dota/css/*"],function(file){
+//        server.notify.apply(server,[file]);
+//    });
+//});
