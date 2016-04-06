@@ -135,7 +135,7 @@ this.diyeditor=this.diyeditor||{};
         this.divObject=pdo;
         this.divObject.style.position="absolute";
         this.divObject.style.webkitTransformOrigin="left top";
-        this.divObject.style.transformOrigin="left top";
+        //this.divObject.style.transformOrigin="left top";
     };
 
     p.setMask=function(px,py,pw,ph,purl){
