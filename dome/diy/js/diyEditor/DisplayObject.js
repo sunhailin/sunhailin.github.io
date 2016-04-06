@@ -134,7 +134,9 @@ this.diyeditor=this.diyeditor||{};
     p.setDivObject=function(pdo){
         this.divObject=pdo;
         this.divObject.style.position="absolute";
+        this.divObject.style.webkitTransformOrigin="0 0";
         this.divObject.style.transformOrigin="0 0";
+        this.divObject.style.webkitMaskRepeat="no-repeat";
         this.divObject.style.maskRepeat="no-repeat";
     };
 
