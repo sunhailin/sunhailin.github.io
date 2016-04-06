@@ -127,6 +127,7 @@ this.diyeditor=this.diyeditor||{};
     }catch (e){}
 
     p._updateTramsform=function(){
+        this.divObject.style.webkitTransform="rotate("+this._rotation+"deg) scaleX("+this._scaleX+") scaleY("+this._scaleY+")";
         this.divObject.style.transform="rotate("+this._rotation+"deg) scaleX("+this._scaleX+") scaleY("+this._scaleY+")";
     };
 

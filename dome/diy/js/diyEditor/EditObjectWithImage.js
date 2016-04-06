@@ -55,7 +55,6 @@ this.diyeditor=this.diyeditor||{};
         param = param % 360;
         this.rotateNum = param;
         this.data.parms.rotation = this.contentContainer.rotation = this.rotateNum;
-        alert(this.rotateNum);
     };
 
     p.select=function(){
