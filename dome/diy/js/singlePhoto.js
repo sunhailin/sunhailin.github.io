@@ -153,11 +153,13 @@ $(function(){
                 photo.handleMouseDown((e.changedTouches[0].pageX-$(photo.divObject).offset().left)/containerScale, (e.changedTouches[0].pageY-$(photo.divObject).offset().top)/containerScale);
                 bgphoto.handleMouseDown((e.changedTouches[0].pageX-$(bgphoto.divObject).offset().left)/containerScale, (e.changedTouches[0].pageY-$(bgphoto.divObject).offset().top)/containerScale);
                 pushUndo();
+                alert("touchstart");
             });
             touch.on(editStage.divObject,"touchend",function(e){
                 photo.handleMouseUp((e.changedTouches[0].pageX-$(photo.divObject).offset().left)/containerScale, (e.changedTouches[0].pageY-$(photo.divObject).offset().top)/containerScale);
                 bgphoto.handleMouseUp((e.changedTouches[0].pageX-$(bgphoto.divObject).offset().left)/containerScale, (e.changedTouches[0].pageY-$(bgphoto.divObject).offset().top)/containerScale);
                 ce.updateImgList();
+                alert("touchend");
             });
             touch.on(editStage.divObject,"dragstart",function(e){
                 photo.handleDragStart(e.x/containerScale, e.y/containerScale);
