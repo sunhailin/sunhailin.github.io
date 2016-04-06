@@ -8,7 +8,7 @@ this.diyeditor=this.diyeditor||{};
 
         this.divObject=document.createElement("div");
         this.divObject.style.position="absolute";
-        this.divObject.style.transformOrigin="0 0";
+        this.divObject.style.webkitTransformOrigin="left top";
         this.divObject.style.maskRepeat="no-repeat";
 
         this._x=0;

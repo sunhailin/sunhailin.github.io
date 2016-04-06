@@ -22,7 +22,7 @@ this.diyeditor=this.diyeditor||{};
         }else{
             this.setDivObject(pi);
             this.divObject.style.position="absolute";
-            this.divObject.style.transformOrigin=0;
+            this.divObject.style.webkitTransformOrigin="left top";
             this.divObject.style.maskRepeat="no-repeat";
             this.divObject.style.width="auto";
             this.divObject.style.height="auto";
