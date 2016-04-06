@@ -177,7 +177,6 @@ $(function(){
                  photo.setContentScale(startScale* e.scale);
                  bgphoto.setContentScale(startScale* e.scale);
                 diyData.isDataChanged=true;
-                alert("pinch");
             });
         }else{
             var isMouseDown=false;
