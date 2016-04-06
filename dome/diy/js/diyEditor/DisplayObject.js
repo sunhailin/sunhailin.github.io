@@ -128,14 +128,12 @@ this.diyeditor=this.diyeditor||{};
 
     p._updateTramsform=function(){
         this.divObject.style.webkitTransform="rotate("+this._rotation+"deg) scaleX("+this._scaleX+") scaleY("+this._scaleY+")";
-        this.divObject.style.transform="rotate("+this._rotation+"deg) scaleX("+this._scaleX+") scaleY("+this._scaleY+")";
     };
 
     p.setDivObject=function(pdo){
         this.divObject=pdo;
         this.divObject.style.position="absolute";
         this.divObject.style.webkitTransformOrigin="left top";
-        //this.divObject.style.transformOrigin="left top";
     };
 
     p.setMask=function(px,py,pw,ph,purl){
