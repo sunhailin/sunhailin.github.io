@@ -1,0 +1,24 @@
+.clearfix:after{
+    content: "\200B";
+    display: block;
+    height: 0;
+    clear: both;
+    zoom: 1;
+}
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.text-ellipsis
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
