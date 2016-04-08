@@ -3,7 +3,7 @@
     var hasListener=false;
     var inited=false;
     window.domready=function(func){
-        if(inited){
+        if(document.readyState==="complete"||inited){
             func();
             return;
         }
