@@ -1,0 +1,148 @@
+body{
+    font-family: "Microsoft YaHei","微软雅黑","Helvetica Neue",Helvetica,"Hiragino Sans GB",Arial,sans-serif;
+}
+.weixin-nav{
+    padding: 0;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    color: #fff;
+    background-color: #393a3f;
+}
+.weixin-nav i{
+    margin: 0 1.25rem 0 1rem;
+    font-size: 1rem;
+}
+.weixin-title{
+    margin: 0 0 0 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+.bar-nav~.content{
+    top: 2.5rem;
+    bottom: 2.5rem;
+}
+.recent-list{
+    margin: 0;
+}
+.recent-list li{
+    height: 3rem;
+    border-bottom: 1px solid #f3f3f3;
+}
+.item-inner:after{
+   height: 0 !important;
+}
+.item-media{
+    padding: 0 !important;
+}
+.avatar{
+    width: 2.5rem;
+    height: 2.5rem;
+    background: no-repeat center;
+    background-size: contain;
+}
+.friend-name{
+    display: block;
+    color: #546d9e;
+    font-size: 0.75rem;
+}
+.friend-msg{
+    display: block;
+    color: #9a9a9a;
+    font-size: 0.6rem;
+}
+.msg-time{
+    color: #9a9a9a;
+    font-size: 0.6rem;
+}
+.btn-bar{
+    border-top: 1px solid #e5e5e5;
+}
+.tab-icon{
+    display: block;
+    padding-top: 0.35rem;
+    font-size: 1.1rem;
+}
+.tab-label{
+    display: block;
+    font-size: 0.6rem;
+}
+.tab-item.active{
+    color: #45c01a !important;
+}
+.tab-item:active{
+    color: #45c01a !important;
+}
+.friend-list{
+    margin: 0;
+}
+.friend-list li{
+    height: 3rem;
+    border-bottom: 1px solid #f3f3f3;
+}
+.friend-avatar{
+    width: 1.8rem;
+    height: 1.8rem;
+    background: no-repeat center;
+    background-size: contain;
+}
+.category-item{
+    height: 1rem !important;
+    font-size: 0.6rem;
+    background-color: #ebebeb;
+}
+.list-margin {
+    margin: 0.9rem 0;
+}
+.list-margin ul{
+    background-color: #fff;
+}
+.list-margin li{
+    margin: 0 3%;
+    border-bottom: 1px solid #f3f3f3;
+}
+.list-margin .item-inner{
+    padding-right: 0 !important;
+}
+.icon-avatar {
+    width: 1.1rem;
+    height: 1.1rem;
+    background: no-repeat center;
+    background-size: contain;
+}
+.item-name {
+    font-size: 0.7rem;
+}
+.friend-news{
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url("../img/weixin.png") no-repeat center;
+    background-size: contain;
+}
+.me-list li{
+    height: 3rem;
+}
+.me-avatar{
+    width: 2.5rem;
+    height: 2.5rem;
+    background: no-repeat center;
+    background-size: contain;
+}
+.me-name{
+    display: block;
+    font-size: 0.7rem;
+}
+.me-count{
+    display: block;
+    font-size: 0.7rem;
+    color: #c7c7c7;
+}
+.me-qrcode{
+    width: 0.9rem;
+    height: 0.9rem;
+    background: url("../img/qrcode.png") no-repeat center;
+    background-size: contain;
+}
+.setting-list .item-after{
+    font-size: 0.7rem;
+    color: #c7c7c7;
+}
