@@ -87,36 +87,36 @@ var rename=require("gulp-rename");
 //    });
 //});
 
-//gulp.task("imoocServer", function () {
-//    var server=gls.static("/");
-//    server.start();
-//    gulp.watch(["dome/imooc/*","dome/imooc/css/*"],function(file){
-//        server.notify.apply(server,[file]);
-//    });
-//});
-//
-//gulp.task("minifyCss",function(){
-//    gulp.src("dome/imooc/css/course.css")
-//        .pipe(autoPreFixer({
-//            browsers:["last 2 versions"],
-//            remove:true
-//        }))
-//        .pipe(rename({suffix:".min"}))
-//        .pipe(cssnano())
-//        .pipe(gulp.dest("dome/imooc/css"));
-//});
-//
-//gulp.task("watchCss",function(){
-//    gulp.watch("dome/imooc/css/course.css",["minifyCss"]);
-//});
-//
-//gulp.task("default",["imoocServer","watchCss"]);
-
-
-gulp.task("weixinServer", function () {
-    var server=gls.static("/");
-    server.start();
-    gulp.watch(["dome/weixin/*","dome/weixin/css/*"],function(file){
-        server.notify.apply(server,[file]);
-    });
+gulp.task("imoocServer", function () {
+   var server=gls.static("/");
+   server.start();
+   gulp.watch(["dome/imooc/*","dome/imooc/css/*"],function(file){
+       server.notify.apply(server,[file]);
+   });
 });
+
+gulp.task("minifyCss",function(){
+   gulp.src("dome/imooc/css/course.css")
+       .pipe(autoPreFixer({
+           browsers:["last 2 versions"],
+           remove:true
+       }))
+       .pipe(rename({suffix:".min"}))
+       .pipe(cssnano())
+       .pipe(gulp.dest("dome/imooc/css"));
+});
+
+gulp.task("watchCss",function(){
+   gulp.watch("dome/imooc/css/course.css",["minifyCss"]);
+});
+
+gulp.task("default",["imoocServer","watchCss"]);
+
+
+// gulp.task("weixinServer", function () {
+//     var server=gls.static("/");
+//     server.start();
+//     gulp.watch(["dome/weixin/*","dome/weixin/css/*"],function(file){
+//         server.notify.apply(server,[file]);
+//     });
+// });

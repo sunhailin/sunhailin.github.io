@@ -1,4 +1,10 @@
+html,body{
+  font-family: "宋体";
+}
 body {
+  font-size: 14px;
+}
+select,input{
   font-size: 14px;
 }
 ul {
