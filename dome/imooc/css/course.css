@@ -268,3 +268,89 @@
 .course-info span:first-child{
     margin-right: 20px;
 }
+.pagination{
+    height: 31px;
+    text-align: center;
+}
+.pagination li{
+    display: inline-block;
+    height: 30px;
+    margin-right: 7px;
+    line-height: 30px;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+.pagination li:not(.active):not(.disabled):hover{
+    color: #ec1500;
+    border-bottom: 1px solid #ec1500;
+}
+.pagination .disabled{
+    color: #ccc;
+    cursor: default;
+}
+.pagination .page-number{
+    width: 30px;
+}
+.page-number.active{
+    background-color: #ec1500;
+    color: #fff;
+}
+.footer-nav{
+    height: 100px;
+    margin-top: 45px;
+    background-color: #000;
+}
+.links{
+    margin: 30px 0 0 30px;
+    color: #ccc;
+    font-size: 12px;
+}
+.links li{
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.links li:hover{
+    color: #fff;
+}
+.copy-right{
+    margin: 15px 0 0 30px;
+    color: #787d82;
+    font-size: 12px;
+}
+.share{
+    margin-top: 30px;
+}
+.share li{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-left: 12px;
+    background: url(../img/footer-sprite.png) no-repeat;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.share li:hover{
+    opacity: 1;
+}
+.weixin{
+    background-position: 0 -279px !important;
+}
+.weibo{
+    background-position: 0 -321px !important;
+}
+.qq{
+    background-position: 0 -363px !important;
+}
+.weixin div{
+    display: none;
+    position: absolute;
+    width: 170px;
+    height: 213px;
+    margin: -223px 0 0 -70px;
+    background: url(../img/footer-sprite.png) no-repeat 0 0;
+}
+.weixin:hover div{
+    display: block;
+}
