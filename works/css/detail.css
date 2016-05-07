@@ -44,3 +44,8 @@ nav li{
     background: no-repeat center;
     background-size: contain;
 }
+.tip{
+    margin-top: 20px;
+    text-align: center;
+    color: #ccc;
+}
