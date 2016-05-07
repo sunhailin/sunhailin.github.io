@@ -1,0 +1,55 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background: #b8ac9c url(../img/bg.jpg) fixed no-repeat center;
+    background-size: cover;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.banner h1{
+    padding-top: 250px;
+    color: #000;
+    font-size: 70px;
+    text-shadow: 0 0 10px #fff;
+}
+.work-item{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.work-item>div{
+    width: 80%;
+    margin: 0 auto;
+}
+.work-item-gray{
+    background-color: #eef1f2;
+}
+.work-item-white{
+    background-color: #fff;
+}
+.work-icon{
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+.work-icon i{
+    margin-top: 75px;
+    font-size: 250px;
+    color: #666;
+    transform: translate(0,-30px) scale(0.5);
+    transition: transform 0.5s;
+}
+.work-detail{
+    float: left;
+    width: 60%;
+}
+.work-text{
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 1.7;
+}

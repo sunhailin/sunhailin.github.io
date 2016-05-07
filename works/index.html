@@ -2,44 +2,128 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>我的作品</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="email=no">
+
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="../css/public.css">
-    <style>
-        body{
-            margin-top: 200px;
-            background-color: #333;
-            text-align: center;
-            overflow: hidden;
-        }
-        li{
-            font-size: 20px;
-            line-height: 20px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<ul>
-    <li class="button purple" data-path="diyV1" data-imgnum="16"><div class="shine"></div><span>台历diyV1</span></li>
-    <li class="button blue" data-path="diyV2" data-imgnum="9"><div class="shine"></div><span>台历diyV2</span></li>
-    <li class="button green" data-path="offline" data-imgnum="5"><div class="shine"></div><span>线下活动</span></li>
-    <li class="button red" data-path="printpicture" data-imgnum="13"><div class="shine"></div><span>照片冲印</span></li>
-    <li class="button purple" data-path="erp" data-imgnum="4"><div class="shine"></div><span>erp几个页面</span></li>
-</ul>
+<div class="banner">
+    <h1>MY WORKS</h1>
+</div>
+<div class="work-item work-item-gray clearfix">
+    <div>
+        <div class="work-icon">
+            <i class="fa fa-scissors"></i>
+        </div>
+        <div class="work-detail">
+            <div class="work-title">
+                <div class="button purple" data-path="diyV1" data-imgnum="16">
+                    <div class="shine"></div><span>台历diyV1</span>
+                </div>
+            </div>
+            <p class="work-text">
+                这是一个微信公众号（Bang小孩），关注后可以用自己的照片定制台历，完成后我们会把做好的台历快递给用户。
+                主要功能包括台历模板选择、上传照片、更换照片、照片的缩放、旋转等编辑。最后可以生成一本用户自己制作的台历。
+            </p>
+        </div>
+    </div>
+</div>
+<div class="work-item work-item-white clearfix">
+    <div>
+        <div class="work-detail">
+            <div class="work-title">
+                <div class="button blue" data-path="diyV2" data-imgnum="9">
+                    <div class="shine"></div><span>台历diyV2</span>
+                </div>
+            </div>
+            <p class="work-text">
+                这个版本对上一版本就行了优化和改进。主要包括UI全面更新，上传图片方式更为方便，具有自动填图功能，编辑图片的方式也更为方便。
+            </p>
+        </div>
+        <div class="work-icon">
+            <i class="fa fa-cubes"></i>
+        </div>
+    </div>
+</div>
+<div class="work-item work-item-gray clearfix">
+    <div>
+        <div class="work-icon">
+            <i class="fa fa-futbol-o"></i>
+        </div>
+        <div class="work-detail">
+            <div class="work-title">
+                <div class="button green" data-path="offline" data-imgnum="5">
+                    <div class="shine"></div><span>线下活动</span>
+                </div>
+            </div>
+            <p class="work-text">
+                我们公众号采取线上报名，线下参加亲子活动，然后在线上查看活动照片和视频的方式展开了几次线下活动。功能包括报名，分享到朋友圈助力，查看活动照片和视频。
+            </p>
+        </div>
+    </div>
+</div>
+<div class="work-item work-item-white clearfix">
+    <div>
+        <div class="work-detail">
+            <div class="work-title">
+                <div class="button red" data-path="printpicture" data-imgnum="13">
+                    <div class="shine"></div><span>照片冲印</span>
+                </div>
+            </div>
+            <p class="work-text">
+                你可以上传自己喜欢的照片，冲印成纸质相片。功能包括照片尺寸选择、照片上传、照片编辑、数量设置等。还可以冲印证件照。
+            </p>
+        </div>
+        <div class="work-icon">
+            <i class="fa fa-picture-o"></i>
+        </div>
+    </div>
+</div>
+<div class="work-item work-item-gray clearfix">
+    <div>
+        <div class="work-icon">
+            <i class="fa fa-file-text-o"></i>
+        </div>
+        <div class="work-detail">
+            <div class="work-title">
+                <div class="button purple" data-path="erp" data-imgnum="4">
+                    <div class="shine"></div><span>erp几个页面</span>
+                </div>
+            </div>
+            <p class="work-text">
+                这个是嵌套到erp里面的几个查询页面，并非一个完整的项目。
+            </p>
+        </div>
+    </div>
+</div>
 <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script>
     $(function(){
-        $("ul").on("click","li",function(){
+        $(".button").on("click",function(){
             var path=$(this).attr("data-path");
             var imgnum=$(this).attr("data-imgnum");
             window.open("detail.html?path="+path+"&imgnum="+imgnum+"&name="+$(this).find("span").html());
         });
+        var items=$(".work-item");
+        window.onscroll=function () {
+            var itemIndex=Math.floor(document.body.scrollTop/400)-1;
+            if(itemIndex>=0){
+                var currentItem=$(items[itemIndex]);
+                if(currentItem>=0||!currentItem.data("moved")){
+                    currentItem.find("i").css("transform","translate(0,0) scale(1)");
+                    currentItem.data("moved","1");
+                }
+            }
+        };
     });
 </script>
 </body>
