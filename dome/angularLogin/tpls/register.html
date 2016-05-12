@@ -1,0 +1,27 @@
+<form ng-controller="registerCtrl" class="center-form" role="form" id="registerForm" name="registerForm" ng-submit="submit(registerForm.$valid)" onsubmit="javascript: return false;">
+	<h2>注册</h2>
+	<div class="form-group has-feedback" ng-class="{'has-error':registerForm.account.$invalid&&!registerForm.account.$pristine}">
+		<input type="email" class="form-control" id="account" name="account" ng-model="user.account" placeholder="邮箱" required autofocus/>
+		<span class="fa fa-check form-control-feedback" ng-show="registerForm.account.$valid"></span>
+		<div class="help-block" ng-show="registerForm.account.$invalid&&!registerForm.account.$pristine">请输入正确邮箱</div>
+	</div>
+	<div class="form-group has-feedback" ng-class="{'has-error':registerForm.username.$invalid&&!registerForm.username.$pristine}">
+		<input type="text" class="form-control" id="username" name="username" ng-model="user.username" placeholder="姓名" required/>
+		<span class="fa fa-check form-control-feedback" ng-show="registerForm.username.$valid"></span>
+		<div class="help-block" ng-show="registerForm.username.$invalid&&!registerForm.username.$pristine">请输入姓名</div>
+	</div>
+	<div class="form-group has-feedback" ng-class="{'has-error':registerForm.password.$invalid&&!registerForm.password.$pristine}">
+		<input type="password" class="form-control" id="password" name="password" ng-model="user.password" placeholder="密码" required/>
+		<span class="fa fa-check form-control-feedback" ng-show="registerForm.password.$valid"></span>
+		<div class="help-block" ng-show="registerForm.password.$invalid&&!registerForm.password.$pristine">请输入密码</div>
+	</div>
+	<div class="form-group has-feedback" ng-class="{'has-error':registerForm.passwordConfirm.$invalid&&!registerForm.passwordConfirm.$pristine}">
+		<input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" ng-model="user.passwordComfirm" password-check="password" placeholder="确认密码" required/>
+		<span class="fa fa-check form-control-feedback" ng-show="registerForm.passwordConfirm.$valid"></span>
+		<div class="help-block" ng-show="registerForm.passwordConfirm.$error.required&&!registerForm.passwordConfirm.$pristine">请输入确认密码</div>
+		<div class="help-block" ng-show="registerForm.passwordConfirm.$error.passwordmatch&&!registerForm.passwordConfirm.$pristine">两次密码不一致</div>
+	</div>
+	<div class="form-group">
+		<button type="submit" class="btn btn-primary btn-block" id="registerBtn" ng-disabled="registerForm.$invalid">注册</button>
+	</div>
+</form>

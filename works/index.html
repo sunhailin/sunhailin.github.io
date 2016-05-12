@@ -115,7 +115,7 @@
         });
         var items=$(".work-item");
         window.onscroll=function () {
-            var itemIndex=Math.floor(window.scrollY/400)-1;
+            var itemIndex=Math.floor((window.scrollY+40)/400)-1;
             if(itemIndex>=0){
                 var currentItem=$(items[itemIndex]);
                 if(currentItem>=0||!currentItem.data("moved")){
