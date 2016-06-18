@@ -4,6 +4,31 @@ var autoPreFixer=require("gulp-autoprefixer");
 var gls=require("gulp-live-server");
 var cssnano=require("gulp-cssnano");
 var rename=require("gulp-rename");
+var uglify=require("gulp-uglify");
+var ngmin=require("gulp-ngmin");
+
+gulp.task("watchIndexCss",function () {
+    gulp.watch(["css/common.css"],function(file){
+       gulp.src(file.path)
+           .pipe(autoPreFixer({
+           browsers:["last 2 versions"],
+           remove:true
+       }))
+       .pipe(rename({suffix:".min"}))
+       .pipe(cssnano())
+       .pipe(gulp.dest("css/"));
+   });
+});
+gulp.task("watchIndexJs",function () {
+    gulp.watch(["js/app.js"],function(file){
+        gulp.src(file.path)
+            .pipe(rename({suffix:".min"}))
+            .pipe(uglify({mangle: false}))
+            .pipe(gulp.dest("js/"));
+    });
+});
+
+gulp.task("default",["watchIndexCss","watchIndexJs"]);
 
 //var zhihuLessAll="dome/zhihu/css/less/*.less";
 //var zhihuLessPath="dome/zhihu/css/less/zhihu.less";
@@ -87,30 +112,30 @@ var rename=require("gulp-rename");
 //    });
 //});
 
-gulp.task("imoocServer", function () {
-   var server=gls.static("/");
-   server.start();
-   gulp.watch(["dome/imooc/*","dome/imooc/css/*"],function(file){
-       server.notify.apply(server,[file]);
-   });
-});
-
-gulp.task("minifyCss",function(){
-   gulp.src("dome/imooc/css/course.css")
-       .pipe(autoPreFixer({
-           browsers:["last 2 versions"],
-           remove:true
-       }))
-       .pipe(rename({suffix:".min"}))
-       .pipe(cssnano())
-       .pipe(gulp.dest("dome/imooc/css"));
-});
-
-gulp.task("watchCss",function(){
-   gulp.watch("dome/imooc/css/course.css",["minifyCss"]);
-});
-
-gulp.task("default",["imoocServer","watchCss"]);
+// gulp.task("imoocServer", function () {
+//    var server=gls.static("/");
+//    server.start();
+//    gulp.watch(["dome/imooc/*","dome/imooc/css/*"],function(file){
+//        server.notify.apply(server,[file]);
+//    });
+// });
+//
+// gulp.task("minifyCss",function(){
+//    gulp.src("dome/imooc/css/course.css")
+//        .pipe(autoPreFixer({
+//            browsers:["last 2 versions"],
+//            remove:true
+//        }))
+//        .pipe(rename({suffix:".min"}))
+//        .pipe(cssnano())
+//        .pipe(gulp.dest("dome/imooc/css"));
+// });
+//
+// gulp.task("watchCss",function(){
+//    gulp.watch("dome/imooc/css/course.css",["minifyCss"]);
+// });
+//
+// gulp.task("default",["imoocServer","watchCss"]);
 
 
 // gulp.task("weixinServer", function () {

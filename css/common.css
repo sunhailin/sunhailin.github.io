@@ -1,0 +1,116 @@
+/*reset*/
+body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li,form,button,input,textarea,td,th{
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    font-size: 16px;
+    font-family: "Microsoft YaHei","微软雅黑","Helvetica Neue",Helvetica,"Hiragino Sans GB",Arial,sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+/*public*/
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{
+    clear:both;
+}
+.container{
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/*index*/
+.avatar{
+    width: 200px;
+    height: 200px;
+    margin: 100px auto 0 auto;
+    border: 5px solid #cf1b1c;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate(-20deg);
+    animation: avatar-animation-revers 0.8s 1 ease;
+}
+.avatar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.avatar:hover{
+    transform: rotate(0deg);
+    animation: avatar-animation 0.8s 1 ease;
+}
+@keyframes avatar-animation {
+    0%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes avatar-animation-revers {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-35deg);
+    }
+    100%{
+        transform: rotate(-20deg);
+    }
+}
+.index-nav{
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+.index-nav ul{
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+    list-style: none;
+}
+.index-nav li{
+    float: left;
+    display: inline-block;
+    width: 25%;
+    padding: 20px 0;
+}
+.index-nav a{
+    color: #888;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.index-nav a:hover{
+    color:#000;
+}
+#circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: -1;
+}
+.canvasTransform{
+    transform-origin: 0 0;
+    transform: scale(0.5);
+}
