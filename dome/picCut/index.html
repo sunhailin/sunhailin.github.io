@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片裁剪示例</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <style>
+        /*reset*/
+        body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li,form,button,input,textarea,td,th{
+            padding: 0;
+            margin: 0;
+        }
+        /*public*/
+        body{
+            font-family: "Microsoft YaHei","微软雅黑","Helvetica Neue",Helvetica,"Hiragino Sans GB",Arial,sans-serif;
+        }
+
+        html{
+            font-size: 16px;
+        }
+        .container{
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .title{
+            margin: 30px 0;
+        }
+        .cropit-preview {
+            background-color: #f8f8f8;
+            background-size: cover;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 200px;
+            height: 100px;
+            margin: 100px 0;
+        }
+
+        .cropit-preview-image-container {
+            cursor: move;
+        }
+        .cropit-preview-background {
+            opacity: .2;
+            cursor: auto;
+        }
+        .image-size-label {
+            margin-top: 10px;
+        }
+
+        input, .export {
+            display: block;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="title">图片裁剪示例</h1>
+    <div>
+        <div class="image-editor">
+            <input type="file" class="cropit-image-input">
+            <div class="cropit-preview"></div>
+            <div class="image-size-label">
+                缩放
+            </div>
+            <input type="range" class="cropit-image-zoom-input">
+            <button class="rotate-ccw">左转</button>
+            <button class="rotate-cw">右转</button>
+            <button class="export">保存图片</button>
+        </div>
+    </div>
+</div>
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/jquery.cropit.js"></script>
+<script>
+    $(function(){
+        $('.image-editor').cropit({
+            exportZoom: 3,
+            imageBackground: true,
+            imageBackgroundBorderWidth: 100
+        });
+        $('.rotate-cw').click(function() {
+            $('.image-editor').cropit('rotateCW');
+        });
+        $('.rotate-ccw').click(function() {
+            $('.image-editor').cropit('rotateCCW');
+        });
+
+        $('.export').click(function() {
+            var imageData = $('.image-editor').cropit('export');
+            window.open(imageData);
+        });
+    });
+</script>
+</body>
+</html>
