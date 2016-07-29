@@ -127,7 +127,7 @@ this.diyeditor=this.diyeditor||{};
     }catch (e){}
 
     p._updateTramsform=function(){
-        this.divObject.style.webkitTransform="rotate("+this._rotation+"deg) scaleX("+this._scaleX+") scaleY("+this._scaleY+")";
+        this.divObject.style.webkitTransform="rotate("+this._rotation+"deg) scaleX("+this._scaleX+") scaleY("+this._scaleY+") translate3d(0,0,0)";
     };
 
     p.setDivObject=function(pdo){
