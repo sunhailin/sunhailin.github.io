@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diy dome</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/pageStyle.css">
+</head>
+<body>
+<nav id="mainNav" class="nav">
+    <div class="nav-btn left-btn-arrow">
+        <img onclick="window.history.back();" class="left-arrow" src="images/left-arrow.png">
+        <p id="previewBtn">预览</p>
+    </div>
+    <div class="nav-btn" id="saveBtn">
+        <p>保存</p>
+    </div>
+</nav>
+<div class="mainContainer">
+    <div class="diyContainer" id="editDiyContainer">
+        <div class="diyEditor" id="editStage"></div>
+    </div>
+</div>
+<div class="imgContainer">
+    <div class="imgList">
+        <ul></ul>
+    </div>
+</div>
+
+<div class="modal modal-align fade" id="uploading" tabindex="-1" role="dialog" aria-labelledby="uploadingLabel" aria-hidden="true"
+     data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="uploadingLabel" class="text-center">图片上传中</h4>
+            </div>
+            <div class="modal-body">
+                <div id="progress">
+                    <div class="loading-container">
+                        <div class="loading">
+                            <div class="loading-dot"></div>
+                        </div>
+                        <div class="loading-text"><p></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="saveModal" tabindex="-1" role="dialog" aria-labelledby="saveModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="saveModalLabel" class="text-center">保存作品</h4>
+            </div>
+            <div class="modal-body">
+                <div id="saveTip">
+                    <p>已上传的照片预览/编辑无误要保存吗？</p>
+                </div>
+                <div id="blurTip">
+                    <p>像素不足不影响印刷！</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="save-modal-btn" data-dismiss="modal">返回</div>
+                <div class="save-modal-btn" id="goToCart">加入购物车</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="photo-btn-box" id="photoBtnContainer">
+    <ul class="photo-btn-list">
+        <li id="editPhotoBtn">编辑</li>
+        <li id="uploadBtn">照片</li>
+        <li id="deleteBtn">删除</li>
+    </ul>
+</div>
+<div class="photo-edit-box">
+    <nav id="singleEditNav" class="nav">
+        <div class="nav-btn left-btn-arrow" id="backToMain">
+            <img class="left-arrow" src="images/left-arrow.png">
+            <p>编辑</p>
+        </div>
+        <div class="nav-btn" id="singleSave">
+            <p>保存</p>
+        </div>
+    </nav>
+    <div class="photo-edit-main">
+        <div id="photoEditStage"></div>
+    </div>
+    <div class="bottom-btn-box">
+        <div class="bottom-btn-item-box">
+            <div class="bottom-btn-item" id="rotateBottom"><div></div></div>
+        </div>
+        <div class="bottom-btn-item-box">
+            <div class="bottom-btn-item" id="changeBottom"><div></div></div>
+        </div>
+        <div class="bottom-btn-item-box" style="display: none">
+            <div class="bottom-btn-item" id="noBleedingBottom"><div></div></div>
+        </div>
+        <div class="bottom-btn-item-box">
+            <div class="bottom-btn-item" id="undoBottom"><div></div></div>
+        </div>
+        <div class="bottom-btn-item-box">
+            <div class="bottom-btn-item" id="leftBottom"><div></div></div>
+        </div>
+        <div class="bottom-btn-item-box">
+            <div class="bottom-btn-item" id="rightBottom"><div></div></div>
+        </div>
+    </div>
+</div>
+<div class="preview-box">
+    <nav id="previewNav" class="nav">
+        <div class="nav-btn left-btn-arrow" id="previewBackToMain">
+            <img class="left-arrow" src="images/left-arrow.png">
+            <p>编辑</p>
+        </div>
+        <div class="nav-btn" id="previewBuy">
+            <p>保存</p>
+        </div>
+    </nav>
+    <div class="previewMain">
+        <div class="diyContainer" id="previewDiyContainer">
+            <div class="diyEditor" id="previewStage"></div>
+        </div>
+    </div>
+</div>
+
+<!--js libs-->
+<script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="//wx.corgii.com/uploadsvr/wx"></script>
+<script src="js/lib/touch.min.js"></script>
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/lib/webuploader.min.js"></script>
+
+<script src="js/diyEditor/indexOf.js"></script>
+<script src="js/diyEditor/extends.js"></script>
+<script src="js/diyEditor/promote.js"></script>
+<script src="js/diyEditor/Event.js"></script>
+<script src="js/diyEditor/EventDispatcher.js"></script>
+<script src="js/diyEditor/DisplayObject.js"></script>
+<script src="js/diyEditor/Shape.js"></script>
+<script src="js/diyEditor/Container.js"></script>
+<script src="js/diyEditor/Stage.js"></script>
+<script src="js/diyEditor/Bitmap.js"></script>
+<script src="js/diyEditor/DiyData.js"></script>
+<script src="js/diyEditor/EditObject.js"></script>
+<script src="js/diyEditor/EditObjectWithImage.js"></script>
+<script src="js/diyEditor/BgObject.js"></script>
+<script src="js/diyEditor/DecorationObject.js"></script>
+<script src="js/diyEditor/DateObject.js"></script>
+<script src="js/diyEditor/ImageObject.js"></script>
+<script src="js/diyEditor/EditObjectFactory.js"></script>
+<script src="js/diyEditor/SelectGroup.js"></script>
+<script src="js/diyEditor/EditView.js"></script>
+<script src="js/diyEditor/FrameContainer.js"></script>
+
+<script src="js/PageData.js"></script>
+<script src="js/initStage.js"></script>
+<script src="js/changePage.js"></script>
+<script src="js/imgList.js"></script>
+<script src="js/photoButtons.js"></script>
+<script src="js/singlePhoto.js"></script>
+<script src="js/saveAndBuy.js"></script>
+<script src="js/previewInPage.js"></script>
+<script src="js/editMain.js"></script>
+</body>
+</html>
