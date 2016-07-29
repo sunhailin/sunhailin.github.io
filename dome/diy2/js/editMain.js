@@ -6,8 +6,8 @@ $(function () {
     pageData.uid = 123;
     pageData.uwid = 123;
     pageData.pcid = 123;
-    pageData.path = "diy/data/data.json";
-    pageData.framePath = "diy/frame/data.json";
+    pageData.path = "diy2/data/data.json";
+    pageData.framePath = "diy2/frame/data.json";
     pageData.tpid = 123;
     pageData.t = 1;
     pageData.subscribe = 1;
