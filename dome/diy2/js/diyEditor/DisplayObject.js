@@ -30,8 +30,8 @@ this.diyeditor = this.diyeditor || {};
 
     p._setX = function (px) {
         this._x = px;
-        // this.divObject.style.left = this._x + "px";
-        this._updateTramsform();
+        this.divObject.style.left = this._x + "px";
+        // this._updateTramsform();
     };
 
     p._getY = function () {
@@ -40,8 +40,8 @@ this.diyeditor = this.diyeditor || {};
 
     p._setY = function (py) {
         this._y = py;
-        // this.divObject.style.top = this._y + "px";
-        this._updateTramsform();
+        this.divObject.style.top = this._y + "px";
+        // this._updateTramsform();
     };
 
     try {
@@ -130,7 +130,8 @@ this.diyeditor = this.diyeditor || {};
     }
 
     p._updateTramsform = function () {
-        this.divObject.style.webkitTransform = "rotate(" + this._rotation + "deg) scaleX(" + this._scaleX + ") scaleY(" + this._scaleY + ") translate3d(" + this._x + "px," + this._y + "px,0)";
+        // this.divObject.style.webkitTransform = "rotate(" + this._rotation + "deg) scaleX(" + this._scaleX + ") scaleY(" + this._scaleY + ") translate3d(" + this._x + "px," + this._y + "px,0)";
+        this.divObject.style.webkitTransform = "rotate(" + this._rotation + "deg) scaleX(" + this._scaleX + ") scaleY(" + this._scaleY + ") translate3d(0,0,0)";
     };
 
     p.setDivObject = function (pdo) {
