@@ -140,13 +140,13 @@ this.diyeditor = this.diyeditor || {};
     };
 
     p.setMask = function (px, py, pw, ph, purl) {
-        // this.divObject.style.webkitMaskSize=pw+"px"+" "+ph+"px";
-        // this.divObject.style.webkitMaskPosition=px+"px"+" "+py+"px";
-        // if(purl===undefined){
-        //     this.divObject.style.webkitMaskImage="url(images/mask.png)";
-        // }else{
-        //     this.divObject.style.webkitMaskImage="url("+purl+")";
-        // }
+        this.divObject.style.webkitMaskSize=pw+"px"+" "+ph+"px";
+        this.divObject.style.webkitMaskPosition=px+"px"+" "+py+"px";
+        if(purl===undefined){
+            this.divObject.style.webkitMaskImage="url(images/mask.png)";
+        }else{
+            this.divObject.style.webkitMaskImage="url("+purl+")";
+        }
     };
     diyeditor.DisplayObject = diyeditor.promote(DisplayObject, "EventDispatcher");
 }());
