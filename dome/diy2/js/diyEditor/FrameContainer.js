@@ -2,7 +2,7 @@ this.diyeditor = this.diyeditor || {};
 (function () {
     function FrameContainer(data) {
         this.Container_constructor();
-        this.divObject.setAttribute("name","frameContainer");
+        this.divObject.setAttribute("name", "frameContainer");
         this.data = data;
         this.tweenTime = 500;
         this.isSliding = false;
@@ -19,19 +19,19 @@ this.diyeditor = this.diyeditor || {};
             this.maskX = 0;
             this.maskY = 0;
         }
-        this.width=DiyData.frameWidth;
-        this.height=DiyData.frameHeight;
+        this.width = DiyData.frameWidth;
+        this.height = DiyData.frameHeight;
 
-        this.view=null;
-        this.view1=null;
-        this.currentView=null;
+        this.view = null;
+        this.view1 = null;
+        this.currentView = null;
 
 
         this.mainContainer = new diyeditor.Container();
-        this.mainContainer.divObject.setAttribute("name","mainContainer");
-        this.mainContainer.width=this.maskWidth;
-        this.mainContainer.height=this.maskHeight;
-        this.mainContainer.divObject.style.overflow="hidden";
+        this.mainContainer.divObject.setAttribute("name", "mainContainer");
+        this.mainContainer.width = this.maskWidth;
+        this.mainContainer.height = this.maskHeight;
+        this.mainContainer.divObject.style.overflow = "hidden";
         this.mainContainer.x = this.maskX;
         this.mainContainer.y = this.maskY;
         this.addChild(this.mainContainer);
@@ -63,13 +63,13 @@ this.diyeditor = this.diyeditor || {};
         DiyData.viewScale = this.maskWidth / DiyData.pageWidth;
         view.scale = DiyData.viewScale;
         view1.scale = DiyData.viewScale;
-        view1.x = this.maskWidth;
+        view1.divObject.style.left = this.maskWidth + "px";
         this.mainContainer.addChild(view);
         this.mainContainer.addChild(view1);
         this.currentView = view;
     };
 
-    p.addOneEditView=function(view){
+    p.addOneEditView = function (view) {
         this.view = view;
         var DiyData = new diyeditor.DiyData();
         DiyData.viewScale = this.maskWidth / DiyData.pageWidth;
@@ -87,7 +87,7 @@ this.diyeditor = this.diyeditor || {};
     };
 
     p.slidePage = function (drc) {
-        if(this.isSliding){
+        if (this.isSliding) {
             return;
         }
         var DiyData = new diyeditor.DiyData();
@@ -100,36 +100,36 @@ this.diyeditor = this.diyeditor || {};
             var oldView;
             var newView;
             if (this.currentView == this.view) {
-                oldView=this.view;
-                newView=this.view1;
+                oldView = this.view;
+                newView = this.view1;
             } else {
-                oldView=this.view1;
-                newView=this.view;
+                oldView = this.view1;
+                newView = this.view;
             }
             newView.addEditObjects();
             this.currentView = newView;
-            this.isSliding=true;
+            this.isSliding = true;
             //this.mainContainer.addChild(newView);
             //左滑
             if (drc == 1) {
-                newView.x = this.maskWidth;
-                $(oldView.divObject).animate({"left":-this.maskWidth},this.tweenTime);
+                newView.divObject.style.left = this.maskWidth + "px";
+                $(oldView.divObject).animate({"left": -this.maskWidth}, this.tweenTime);
             }
             //右滑
             if (drc == -1) {
-                newView.x = this.maskX - this.maskWidth;
-                $(oldView.divObject).animate({"left":this.maskWidth},this.tweenTime);
+                newView.divObject.style.left = this.maskX - this.maskWidth + "px";
+                $(oldView.divObject).animate({"left": this.maskWidth}, this.tweenTime);
             }
-            var thisPointer=this;
-            $(newView.divObject).animate({"left":0},this.tweenTime,function(){
-                thisPointer.isSliding=false;
+            var thisPointer = this;
+            $(newView.divObject).animate({"left": 0}, this.tweenTime, function () {
+                thisPointer.isSliding = false;
                 oldView.clear();
             });
             this._dispatchPageChanged();
         }
     };
 
-    p.setPageIndex=function(p){
+    p.setPageIndex = function (p) {
         var DiyData = new diyeditor.DiyData();
         if (p >= 0 && p < DiyData.allPageData.length) {
             DiyData.currentPageIndex = p;
@@ -141,7 +141,7 @@ this.diyeditor = this.diyeditor || {};
         }
     };
 
-    p._dispatchPageChanged=function(){
+    p._dispatchPageChanged = function () {
         this.dispatchEvent(new diyeditor.Event("pageChanged"));
     };
 

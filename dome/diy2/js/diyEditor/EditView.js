@@ -4,6 +4,7 @@ this.diyeditor=this.diyeditor||{};
         this.Container_constructor();
         var DiyData=new diyeditor.DiyData();
         this.divObject.setAttribute("name","editView");
+        this.divObject.style.webkitTransformOrigin = "top left";
         this.width=DiyData.pageWidth;
         this.height=DiyData.pageHeight;
 

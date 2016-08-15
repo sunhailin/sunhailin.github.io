@@ -229,6 +229,7 @@ $(function(){
         var stageHeight=singleEditMain.height();
         editStage=new diyeditor.Stage(singleEditStage[0],stageWidth,stageHeight);
         container=new diyeditor.Container();
+        container.divObject.style.webkitTransformOrigin = "top left";
         container.width=photoData.parms.maskwidth;
         container.height=photoData.parms.maskheight;
         editStage.addChild(container);

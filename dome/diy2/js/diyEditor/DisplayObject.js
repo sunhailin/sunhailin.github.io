@@ -8,7 +8,9 @@ this.diyeditor = this.diyeditor || {};
 
         this.divObject = document.createElement("div");
         this.divObject.style.position = "absolute";
-        this.divObject.style.webkitTransformOrigin = "left top";
+        this.divObject.style.top = "0";
+        this.divObject.style.left = "0";
+        this.divObject.style.webkitTransformOrigin = "center";
         this.divObject.style.maskRepeat = "no-repeat";
 
         this._x = 0;
@@ -141,12 +143,12 @@ this.diyeditor = this.diyeditor || {};
     };
 
     p.setMask = function (px, py, pw, ph, purl) {
-        this.divObject.style.webkitMaskSize=pw+"px"+" "+ph+"px";
-        this.divObject.style.webkitMaskPosition=px+"px"+" "+py+"px";
-        if(purl===undefined){
-            this.divObject.style.webkitMaskImage="url(images/mask.png)";
-        }else{
-            this.divObject.style.webkitMaskImage="url("+purl+")";
+        this.divObject.style.webkitMaskSize = pw + "px" + " " + ph + "px";
+        this.divObject.style.webkitMaskPosition = px + "px" + " " + py + "px";
+        if (purl === undefined) {
+            this.divObject.style.webkitMaskImage = "url(images/mask.png)";
+        } else {
+            this.divObject.style.webkitMaskImage = "url(" + purl + ")";
         }
     };
     diyeditor.DisplayObject = diyeditor.promote(DisplayObject, "EventDispatcher");
