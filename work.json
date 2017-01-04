@@ -1,0 +1,42 @@
+[
+  {
+    "name": "台历diyV1",
+    "path": "diyV1",
+    "count": 16
+  },
+  {
+    "name": "台历diyV2",
+    "path": "diyV2",
+    "count": 9
+  },
+  {
+    "name": "请柬网站",
+    "path": "invite",
+    "count": 13
+  },
+  {
+    "name": "微网站",
+    "path": "wzz",
+    "count": 13
+  },
+  {
+    "name": "分销代理",
+    "path": "fxdl",
+    "count": 10
+  },
+  {
+    "name": "线下活动",
+    "path": "offline",
+    "count": 5
+  },
+  {
+    "name": "照片冲印",
+    "path": "printpicture",
+    "count": 13
+  },
+  {
+    "name": "正卓集团数据汇总平台",
+    "path": "erp2",
+    "count": 31
+  }
+]
